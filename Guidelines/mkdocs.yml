@@ -1,0 +1,20 @@
+site_name: Guidelines for FGP Plugins
+nav:
+  - User guide: index.md
+  - Plugins:
+      - Range / Time Slider:
+          - Overview: rangetimeslider.md
+      - Thematic Slider:
+          - Overview: thematicslider.md
+      - Swiper:
+          - Overview: swiper.md
+      - Charting:
+          - Overview: charting.md
+          - Pie Chart: chart_pie.md
+          - Bar Chart: chart_bar.md
+          - Line Chart: chart_line.md
+  - About: about.md
+
+theme: ivory
+extra_css:
+  - stylesheets/extra.css
