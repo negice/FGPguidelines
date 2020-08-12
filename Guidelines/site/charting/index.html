@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>About &mdash; Guidelines for FGP Plugins</title>
+    <title>Overview &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -40,33 +40,37 @@
             <nav class="nav">
                 <ul class="root">
                     <li class="toctree-l1"><a class="nav-item" href="..">User guide</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Range / Time Slider Plugin</button>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../range_timeslider/">Overview</a></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Range / Time Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/">Overview</a></li>
 </ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Thematic Slider Plugin</button>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/">Overview</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../swiper/">Overview</a></li>
+</ul></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Charting</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/">Overview</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Swiper Plugin</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../swiper/">Overview</a></li>
-</ul></li>
-                    <li class="toctree-l1"><button class="section nav-item">Charting Plugin</button>
-<ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../charts/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../piechart/">Pie Chart</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../barchart/">Bar Chart</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../linechart/">Line Chart</a></li>
-</ul></li>
-                    <li class="toctree-l1 current">
-<a class="nav-item current" href="./">About</a>
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Overview</a>
 <ul class="subnav">
 </ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../chart_pie/">Pie Chart</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../chart_bar/">Bar Chart</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../chart_line/">Line Chart</a></li>
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../linechart/">&laquo; Previous</a></div>
+    <div class="previous"><a href="../swiper/">&laquo; Previous</a></div>
+    <div class="next"><a href="../chart_pie/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -78,13 +82,30 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    
+    <li>Plugins &raquo; </li><li>Charting</li>
 </ul>
 </nav>
-                <div id="content"></div>
+                <div id="content"><h1 id="charts-plugin">Charts Plugin</h1>
+<p>The chart plugin provides extra visualization options for the analysis of data rich datasets. The Chart plugin provides three primary options for data visualization each with different customizations available. You can also have a customized details panel to show useful data. It can take links, images and data from the feature. It is based on the Markdown notation and uses Showdown library to parse the markdown from the configuration file to the details panel.</p>
+<p>The clearer we can communicate our message, the more likely we are to be heard. Pie charts and line graphs can do that ‒ but only in specific circumstances, and only if they’re depicted in a straightforward and clean way The charting options are:</p>
+<ol>
+<li>Pie Chart</li>
+<li>Bar Chart</li>
+<li>Line Chart</li>
+</ol>
+<p>The plugin works with the following mapping services:</p>
+<ul>
+<li>ESRI Feature</li>
+<li>ESRI Dynamic</li>
+</ul>
+<p>Demo Page: Demo</p>
+<iframe width=960px height="450"
+        src=https://jolevesq.github.io/contributed-plugins/chart/samples/chart-index.html?sample=1>
+</iframe></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../linechart/" title="Line Chart"><span>Previous</span></a></div>
+        <div class="previous"><a href="../swiper/" title="Overview"><span>Previous</span></a></div>
+        <div class="next"><a href="../chart_pie/" title="Pie Chart"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
