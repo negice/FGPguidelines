@@ -55,7 +55,7 @@
     <li class="toctree-l3 current"><a class="nav-item current" href="./">Overview</a>
 <ul class="subnav">
 <li class="toctree-l4"><a class="nav-item toc" href="#configure-the-swiper-plugin">Configure the Swiper Plugin</a></li>
-<li class="toctree-l4"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#best-practices">Best Practices</a></li>
 </ul></li>
 </ul></li>
     <li class="toctree-l2"><button class="section nav-item hide">Charting</button>
@@ -88,7 +88,7 @@
 </ul>
 </nav>
                 <div id="content"><h1 id="swiper-plugin">Swiper Plugin</h1>
-<p>The Swiper plugin enables you to easily compare the content of different layers. It provides horizontal and vertical view modes. You can slide the swipe tool to reveal the content of another layer. The plugin works with the following mapping services:</p>
+<p>The Swiper enables you to easily compare the content of different layers. It provides a horizontal view mode which allows you to interact with the map. You can slide the swipe tool to reveal the content of another layer. The plugin works with the following mapping services:</p>
 <ul>
 <li>ESRI Feature</li>
 <li>ESRI Dynamic</li>
@@ -97,8 +97,9 @@
 <li>OGC WFS</li>
 <li>OGC WCS</li>
 </ul>
+<p>More information on Web map services can be found <a href="https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902">here.</a></p>
 <h2 id="configure-the-swiper-plugin">Configure the Swiper Plugin</h2>
-<p>To configure this plugin to work with a mapping web service the following parameters are requited to be configured.</p>
+<p>To configure this plugin to work with a mapping web service the following parameters are required.</p>
 <table>
   <tr>
     <th></th>
@@ -120,11 +121,16 @@
   </tr>
 </table>
 
-<h2 id="best-pratices">Best Pratices</h2>
-<p>The Swiper plugin is a visualization enhancer used to compare different layers. For example, you may want to use it to show before-and-after imagery of a flood, or display two related thematic layers in a map. You have the capability to move the slider back and forth to see the changes. The recommended way to utilize this plugin effectively is as a comparative tool. You can use the swiper plugin to compare layers for an extra layer of visual analysis. As you swipe, the enabled layer will be temporarily erased relative to the position of the swiper. It is important to note that when using the swiper tool with two different layers, the layer with the swiper tool enabled can obscure the underlying layer. The tool could be used to explore satellite or aerial images of locations before and after disasters such as wildfires or landslides. You can also use this tool to compare historical and current maps to see how change occurs over time</p>
+<h2 id="best-practices">Best Practices</h2>
+<p>The Swiper is a visualization enhancer used to compare different layers. For example, you may want to use it to show before-and-after imagery of a flood, or display two related thematic layers in a map. You have the capability to move the slider back and forth to see the changes.</p>
+<p><strong>Tips for interacting with the Swiper Plugin</strong></p>
+<p>The recommended way to utilize this plugin effectively is as a comparative tool. You can use the swiper plugin to compare layers for an extra layer of visual analysis. As you swipe, the enabled layer will be temporarily erased relative to the position of the swiper.
+It is recommended that the layer with the swiper plugin enabled should be the top most layer in the legend tree.</p>
+<p><img alt="swiper1" src="/imgs/swiper1.png" /></p>
+<p>In the example above, the Swiper plugin is enable on the top most layer. It is important to note that when using the swiper tool with two different layers, the layer with the swiper tool enabled can obscure the underlying layer.</p>
+<p>The tool could be used to explore satellite or aerial images of locations before and after disasters such as wildfires or landslides. You can also use this tool to compare historical and current maps to see how change occurs over time</p>
 <h3 id="use-case-example">Use Case Example</h3>
-<p>For example, the swiper tool was used to show the changes in land cover for Agricultural Regions for Canada between 1995 and 2000.</p>
-<p>Layer:</p>
+<p>In this example, the swiper plugin was used to highlight the changes in land cover for Agricultural Regions for Canada between 1995 and 2000 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/16d2f828-96bb-468d-9b7d-1307c81e17b8">layer</a>. These layers are examples of ESRI Image layer being used with the swiper plugin.</p>
 <iframe width=960px height="450"
         src=https://jolevesq.github.io/contributed-plugins/swiper/samples/swiper-index.html>
 </iframe></div>

@@ -88,12 +88,11 @@
 </ul>
 </nav>
                 <div id="content"><h1 id="bar-chart">Bar Chart</h1>
-<p>Bar charts summarize and compare categorical data by using proportional bar lengths to represent values.</p>
+<p>Bar charts summarize and compare categorical data by using proportional bar lengths to represent values. The Chart Plugin supports two different types of bar charts. The traditional bar chart as well as grouped bar charts.</p>
 <p>Bar charts are composed of an x-axis and a y-axis. The x-axis represents discrete categories that correspond to one or many bars. Each bar’s height corresponds to a numeric value, which is measured by the y-axis.</p>
-<p>A bar chart (aka bar graph, column chart) plots numeric values for levels of a categorical feature as bars. Levels are plotted on one chart axis, and values are plotted on the other axis. Each categorical value claims one bar, and the length of each bar corresponds to the bar’s value. Bars are plotted on a common baseline to allow for easy comparison of values.</p>
-<p>A grouped bar chart (aka clustered bar chart, multi-series bar chart) extends the bar chart, plotting numeric values for levels of two categorical variables instead of one. Bars are grouped by position for levels of one categorical variable, with color indicating the secondary category level within each group</p>
+<p>A grouped bar chart extends the bar chart, plotting numeric values for levels of two categorical variables instead of one. Bars are grouped by position for levels of one categorical variable, with color indicating the secondary category level within each group</p>
 <h2 id="configure-the-bar-chart">Configure the Bar Chart</h2>
-<p>To configure this plugin to work with a mapping web service the following parameters are requited to be completed.</p>
+<p>To configure this plugin to work with a mapping web service the following parameters are required.</p>
 <table>
   <tr>
     <th></th>
@@ -169,10 +168,14 @@
 
 <h2 id="best-pratices">Best Pratices</h2>
 <p><strong>Tips for interacting with the Bar Charts</strong></p>
-<p>Use a common zero-valued baseline First and foremost, make sure that all of your bars are being plotted against a zero-value baseline. Not only does that baseline make it easier for readers to compare bar lengths, it also maintains the truthfulness of your data visualization. A bar chart with a non-zero baseline or some other gap in the axis scale can easily misrepresent the comparison between groups since the ratio in bar lengths will not match the ratio in actual bar values.</p>
-<p><strong>When to use a Bar Chart</strong></p>
-<p>A bar chart is used when you want to show a distribution of data points or perform a comparison of metric values across different subgroups of your data. From a bar chart, we can see which groups are highest or most common, and how other groups compare against the others. Since this is a fairly common task, bar charts are a fairly ubiquitous chart type. Common Misuses</p>
-<h3 id="use-case-examples">Use Case Examples</h3></div>
+<p>Use a common zero-valued baseline First and foremost, make sure that all of your bars are being plotted against a zero-value baseline. Not only does that baseline make it easier for readers to compare bar lengths, it also maintains the truthfulness of your data visualization.</p>
+<p>A bar chart with a non-zero baseline or some other gap in the axis scale can easily misrepresent the comparison between groups since the ratio in bar lengths will not match the ratio in actual bar values.</p>
+<p>When attempting to use the barchart to represet multi year data information. It is important to note the data structure which will enable you to accomplish this. In the example below the population for each year is represented as an attribute field.
+<img alt="bar1" src="/imgs/barchart1.png" />
+<strong>When to use a Bar Chart</strong></p>
+<p>A bar chart is used when you want to show a distribution of data points or perform a comparison of metric values across different subgroups of your data. From a bar chart, we can see which groups are highest or most common, and how other groups compare against the others. Since this is a fairly common task, bar charts are a fairly ubiquitous chart type.</p>
+<h3 id="use-case-examples">Use Case Examples</h3>
+<p>In this example,</p></div>
                 <footer>
     <div class="footer-buttons">
         <div class="previous"><a href="../chart_pie/" title="Pie Chart"><span>Previous</span></a></div>
