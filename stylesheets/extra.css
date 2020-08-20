@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+h1 {
+  color: #4b6ccf;
+}
+
 table {
   width: 100%;
   font-size: 12pt;
@@ -51,4 +66,48 @@ img[alt="thematicslider2"] {
 
 img[alt="thematicslider3"] {
   width: 225px;
+}
+
+.admonition.tip {
+  background: white;
+  border-left: solid 4px #3498db;
+  box-shadow: 2px 2px 20px #888888;
+  font-style: italic;
+}
+
+.tip p.admonition-title {
+  color: white;
+  background: #668cff;
+  margin: 0px;
+  padding: 4px 8px;
+}
+
+.tip p.admonition-title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f05a";
+  font-weight: 900;
+  padding-right: 5px;
+  color: white;
+}
+
+.admonition.note {
+  background: #f0f0ff;
+  border-left: solid 4px #555599;
+  box-shadow: 2px 2px 20px #888888;
+  font-style: italic;
+}
+
+.note p.admonition-title {
+  color: white;
+  background: #555599;
+  margin: 0px;
+  padding: 4px 8px;
+}
+
+.note p.admonition-title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  font-weight: 900;
+  padding-right: 5px;
+  color: white;
 }
