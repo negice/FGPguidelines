@@ -1,2 +1,2 @@
 sample_cod,longitude,latitude,year,parameter,result
-BP01-F01,-81.3736,44.5008,"[2013, 2015, 2016]","[['Cesium-137', 'Organically Bound Tritium', 'Tritiated Water'], ['Cesium-137', 'Organically Bound Tritium', 'Tritiated Water'], ['Organically Bound Tritium', 'Cesium-137', 'Tritiated Water']]","[['1.2', '2', '1.5'], [0, 0, 0], [0, 0, 0]]"
+BP01-F01,-81.3736,44.5008,"[{2013}, {2015}, {2016}]","[['Cesium-137', 'Organically Bound Tritium', 'Tritiated Water']]","[['1.2', '2', '1.5'], [0, 0, 0], [0, 0, 0]]"
