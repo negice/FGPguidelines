@@ -1,2 +1,2 @@
-type,properties/name,properties/year,properties/result,properties/parameter
+type,name,year,result,parameter
 Feature,point1,"[2015,2016,2017]","[10,20,30]","['cad','parm','guda']"
