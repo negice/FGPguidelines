@@ -1,16 +1,12 @@
-# Bar Chart
+# Line Chart
 
-Bar charts summarize and compare categorical data by using proportional bar lengths to represent values.
+A line chart consists of one or more lines connecting successive attribute values. Line graphs are useful for showing how things change or move over time and what the trends in the data may be. Since a line graph uses straight line segments to connect data points, it is easy to determine the data range, minimum and maximum, gaps, clusters, and outliers.
 
-Bar charts are composed of an x-axis and a y-axis. The x-axis represents discrete categories that correspond to one or many bars. Each bar’s height corresponds to a numeric value, which is measured by the y-axis.
+When the primary categorical variable is continuous in nature, especially if it deals with time, then a useful alternative chart type to consider is the line chart. A line chart is especially useful when there are a lot of levels in the primary categorical variable: the need to cluster many bars around each position can make the chart difficult to read. The line chart cleans this up by aligning each of the sub-groups vertically, and the connected line between points makes it easier to track how each sub-group changes.
 
-A bar chart (aka bar graph, column chart) plots numeric values for levels of a categorical feature as bars. Levels are plotted on one chart axis, and values are plotted on the other axis. Each categorical value claims one bar, and the length of each bar corresponds to the bar’s value. Bars are plotted on a common baseline to allow for easy comparison of values.
+## Configure the Line Chart
 
-A grouped bar chart (aka clustered bar chart, multi-series bar chart) extends the bar chart, plotting numeric values for levels of two categorical variables instead of one. Bars are grouped by position for levels of one categorical variable, with color indicating the secondary category level within each group
-
-## Configure the Bar Chart
-
-To configure this plugin to work with a mapping web service the following parameters are requited to be completed.
+To configure this plugin to work with a mapping web service the following parameters are required.
 
 <table>
   <tr>
@@ -32,7 +28,7 @@ To configure this plugin to work with a mapping web service the following parame
     <td id=parameters>Colors</td>
     <td>An option to include hexadecimal color values to use to display the chart</td>
   </tr>
-   <tr>
+    <tr>
     <th rowspan="5">Labels   Axis</th>
     <td colspan="2" id=parameters>This option is only available when creating the bar and line chart.</td>
     </tr>
@@ -85,14 +81,15 @@ To configure this plugin to work with a mapping web service the following parame
   </tr>
 </table>
 
-## Best Pratices
+## Best Practices
 
-**Tips for interacting with the Bar Charts**
+**Tips for interacting with the Line Charts**
 
-Use a common zero-valued baseline First and foremost, make sure that all of your bars are being plotted against a zero-value baseline. Not only does that baseline make it easier for readers to compare bar lengths, it also maintains the truthfulness of your data visualization. A bar chart with a non-zero baseline or some other gap in the axis scale can easily misrepresent the comparison between groups since the ratio in bar lengths will not match the ratio in actual bar values.
+To use the Line chart to its best, data must be formatted in a specific way.
 
-**When to use a Bar Chart**
+**When to use a Line Chart**
 
-A bar chart is used when you want to show a distribution of data points or perform a comparison of metric values across different subgroups of your data. From a bar chart, we can see which groups are highest or most common, and how other groups compare against the others. Since this is a fairly common task, bar charts are a fairly ubiquitous chart type. Common Misuses
+Line charts are useful when you want to show the changes in value of a given variable with respect to the changes in some other variable. The other variable is usually time. For example, line charts can be used to show the speed of a vehicle during specific time intervals.
+Multiple lines can also be plotted in a single line chart to compare the trend between series. A common use case for this is to observe the breakdown of the data across different subgroups. The ability to plot multiple lines also provides the line chart a special use case where it might not usually be selected.
 
 ### Use Case Examples

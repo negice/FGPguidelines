@@ -1,6 +1,4 @@
-# Thematic Slider Plugin
-
-This plugin allows you add a thematic slider to your map. It loops trough an array of layers to show comparison or evolution of geolocation data. At the same time, the plugin can show title and description for each of the layers.
+# Configure the Thematic Slider Plugin
 
 The plugin works with the following mapping services:
 
@@ -8,9 +6,13 @@ The plugin works with the following mapping services:
 - ESRI Dynamic
 - OGC WMS
 
-## Configure the Swiper Plugin
+More information on Web map services can be found [here.](https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902)
 
-To configure this plugin to work with a mapping web service the following parameters are requited to be configured.
+---
+
+## Definition of Parameters
+
+To configure this plugin to work with a mapping web service the following parameters are required.
 
 <table>
   <tr>
@@ -66,10 +68,4 @@ To configure this plugin to work with a mapping web service the following parame
   </tr>
 </table>
 
-## Best Pratices
-
-### Use Case Examples
-
-<iframe width=960px height="450"
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html>
-</iframe
+## Step-By-Step Guide

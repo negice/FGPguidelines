@@ -39,40 +39,18 @@
             </div>
             <nav class="nav">
                 <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="..">User guide</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
+                    <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Thematic Slider</button>
 <ul class="subnav">
-    <li class="toctree-l2"><button class="section nav-item hide">Range / Time Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/">Overview</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/">Overview</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/">Overview</a></li>
-</ul></li>
-    <li class="toctree-l2 current"><button class="section nav-item">Charting</button>
-<ul class="subnav">
-    <li class="toctree-l3"><a class="nav-item" href="../charting/">Overview</a></li>
-    <li class="toctree-l3 current"><a class="nav-item current" href="./">Pie Chart</a>
-<ul class="subnav">
-<li class="toctree-l4"><a class="nav-item toc" href="#configure-the-pie-chart">Configure the Pie Chart</a></li>
-<li class="toctree-l4"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
-</ul></li>
-    <li class="toctree-l3"><a class="nav-item" href="../chart_bar/">Bar Chart</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../chart_line/">Line Chart</a></li>
-</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/use_cases/">Examples</a></li>
 </ul></li>
                     <li class="toctree-l1">
 <a class="nav-item" href="../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../charting/">&laquo; Previous</a></div>
-    <div class="next"><a href="../chart_bar/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -84,17 +62,17 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Plugins &raquo; </li><li>Charting</li>
+    
 </ul>
 </nav>
                 <div id="content"><h1 id="pie-chart">Pie Chart</h1>
 <p>A pie chart is a circular chart divided into sections. Each section is proportional to the quantity it represents. A pie chart contains a single series of data points. The pie charts are used to show part-to-whole relationships or for data composition.</p>
-<p>Pie charts are not intended for comparing individual sections with each other or representing exact values ( it is recommended that a serial chart should be used instead). Pie charts are also not meant to show more than seven or eight data points.</p>
+<p>Pie charts are not intended for comparing individual sections with each other or representing exact values ( it is recommended that a serial chart should be used instead). Pie charts are also not meant to show more than five to eight data points.</p>
 <p><strong>Doughnut plot</strong></p>
 <p>The Plugin is capable of using implementing an alternative representation of the common pie chart commonly known as the doughnut plot.</p>
 <p>A doughnut plot (aka donut plot) is simply a pie chart with a central circle removed. For the most part, there aren’t significant differences in readability between a pie chart and donut chart, so the choice of a doughnut over a standard circle is mostly that of aesthetic. One small boon for the ring shape is that the central area can be used for additional information or to report statistics.</p>
 <h2 id="configure-the-pie-chart">Configure the Pie Chart</h2>
-<p>To configure this plugin to work with a mapping web service the following parameters are requited to be completed.</p>
+<p>To configure this plugin to work with a mapping web service the following parameters are required.</p>
 <table>
   <tr>
     <th></th>
@@ -181,8 +159,8 @@
   </tr>
 </table>
 
-<h2 id="best-pratices">Best Pratices</h2>
-<p>Tips for interacting with the Pie Charts</p>
+<h2 id="best-practices">Best Practices</h2>
+<p><strong>Tips for interacting with the Pie Charts</strong></p>
 <p>Keep the followin in mind when using a Pie Chart to visualize data:</p>
 <ul>
 <li>
@@ -197,12 +175,9 @@
 <p>It is recommended tha you use a Pie chart when you’ve got 2-3 data points that are significantly different. This is the one instance when pie charts are helpful ‒ they’re good at showing people what a fraction of something looks like.</p>
 <p><strong>Common Misuses</strong></p>
 <p>Fitting a pie to incompatible data One of the most common mistakes with using a pie chart is to fit it to data that does not represent a parts-to-whole comparison. This confusion occurs most often when the values to be plotted are percentages or proportions, but don’t comprise a complete whole. The example below shows how frequently the people surveyed used each of four applications, but since many people used multiple apps, the proportions sum to much more than 100%.</p>
-<h3 id="use-case-examples">Use Case Examples</h3></div>
+<h3 id="use-case-examples">Use Case Examples</h3>
+<p>In this example, the PIE chart was used to represent the data from <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7043f8c1-d5e5-492f-8bb1-7eeac9f2a74f">Percentage of population with knowledge of English and French by census division, 2016</a>.</p></div>
                 <footer>
-    <div class="footer-buttons">
-        <div class="previous"><a href="../charting/" title="Overview"><span>Previous</span></a></div>
-        <div class="next"><a href="../chart_bar/" title="Bar Chart"><span>Next</span></a></div>
-    </div>
     <div class="footer-note">
         <p>
             Built with <a href="http://www.mkdocs.org">MkDocs</a> using

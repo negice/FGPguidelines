@@ -1,10 +1,6 @@
-# Range Slider / Time Slider
+# Configure the Range Slider Plugin
 
-This plugin allows you add a range slider to your map. The basic slider is horizontal and has anchors that can be moved to establish the range of values to be used. To visualize your data as a dynamic range, you can use any layer that contain numeric or date fields. Once you define the range properties for your layer, an interactive, on-screen slider is used to explore the data through a range you customized.
-
-The Time Slider plugin enables you to view temporal layers in a map and play the animation to see how the data changes over time. Using this plugin, you can control the animation of the data with buttons to play and pause, go to the previous time period, and go to the next time period.
-
-Range Slider properties can be set using any numerical or date field stored in the attribute fields for the following later types.
+The plugin works with the following mapping services:
 
 - ESRI Feature
 - ESRI Dynamic
@@ -13,9 +9,9 @@ Range Slider properties can be set using any numerical or date field stored in t
 - OGC WMS-T
 - OGC WCS
 
-## Configure the Range Slider Plugin
+More information on Web map services can be found [here.](https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902)
 
-To configure this plugin to work with a mapping web service the following parameters are requited to be configured.
+To configure this plugin to work with a mapping web service the following parameters are required.
 
 <table>
   <tr>
@@ -94,17 +90,3 @@ To configure this plugin to work with a mapping web service the following parame
     <td>Determines the field name of the field to be used to filter with the range slider. It is important to note that the field name has to be used and not the alias of the field.</td>
   </tr>
 </table>
-
-## Best Pratices
-
-Once you have defined a range for a layer, the range slider appears as an on-screen control along the side of your map or scene. You can interactively adjust the minimum and maximum values of the displayed range, or move the entire range up and down. The slider and range settings are fully configurable using the Range tab, allowing you to look through the full range extent of your data using logical increments. You can view the range slider either as a full extent slider.
-
-The Time Slider plugin enables you to view temporal layers in a map and play the animation to see how the data changes over time. Using this plugin, you can control the animation of the data with buttons to play and pause, go to the previous time period, and go to the next time period.
-
-### Use Case Examples
-
-For example the Range Slider plugin was used with the Permafrost by ecoprovince layer. The PERMAFROST_PERCENT was used with the range slider plugin to give the ability to the viewer to select specific percentages of permafrost they may be interested in.
-
-<iframe width=960px height="450"
-        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=1>
-</iframe>

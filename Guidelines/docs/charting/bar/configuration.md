@@ -1,12 +1,6 @@
-# Line Chart
+# Configure the Bar Chart
 
-A line chart consists of one or more lines connecting successive attribute values. Line graphs are useful for showing how things change or move over time and what the trends in the data may be. Since a line graph uses straight line segments to connect data points, it is easy to determine the data range, minimum and maximum, gaps, clusters, and outliers.
-
-When the primary categorical variable is continuous in nature, especially if it deals with time, then a useful alternative chart type to consider is the line chart. A line chart is especially useful when there are a lot of levels in the primary categorical variable: the need to cluster many bars around each position can make the chart difficult to read. The line chart cleans this up by aligning each of the sub-groups vertically, and the connected line between points makes it easier to track how each sub-group changes.
-
-## Configure the Line Chart
-
-To configure this plugin to work with a mapping web service the following parameters are requited to be configured.
+To configure this plugin to work with a mapping web service the following parameters are required.
 
 <table>
   <tr>
@@ -28,7 +22,7 @@ To configure this plugin to work with a mapping web service the following parame
     <td id=parameters>Colors</td>
     <td>An option to include hexadecimal color values to use to display the chart</td>
   </tr>
-    <tr>
+   <tr>
     <th rowspan="5">Labels   Axis</th>
     <td colspan="2" id=parameters>This option is only available when creating the bar and line chart.</td>
     </tr>
@@ -80,13 +74,3 @@ To configure this plugin to work with a mapping web service the following parame
     </td>
   </tr>
 </table>
-
-## Best Pratices
-
-**Tips for interacting with the Line Charts**
-
-**When to use a Pie Chart**
-
-**Common Misuses**
-
-### Use Case Examples

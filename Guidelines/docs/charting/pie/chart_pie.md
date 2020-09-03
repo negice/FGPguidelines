@@ -2,7 +2,7 @@
 
 A pie chart is a circular chart divided into sections. Each section is proportional to the quantity it represents. A pie chart contains a single series of data points. The pie charts are used to show part-to-whole relationships or for data composition.
 
-Pie charts are not intended for comparing individual sections with each other or representing exact values ( it is recommended that a serial chart should be used instead). Pie charts are also not meant to show more than seven or eight data points.
+Pie charts are not intended for comparing individual sections with each other or representing exact values ( it is recommended that a serial chart should be used instead). Pie charts are also not meant to show more than five to eight data points.
 
 **Doughnut plot**
 
@@ -12,7 +12,7 @@ A doughnut plot (aka donut plot) is simply a pie chart with a central circle rem
 
 ## Configure the Pie Chart
 
-To configure this plugin to work with a mapping web service the following parameters are requited to be completed.
+To configure this plugin to work with a mapping web service the following parameters are required.
 
 <table>
   <tr>
@@ -100,9 +100,9 @@ To configure this plugin to work with a mapping web service the following parame
   </tr>
 </table>
 
-## Best Pratices
+## Best Practices
 
-Tips for interacting with the Pie Charts
+**Tips for interacting with the Pie Charts**
 
 Keep the followin in mind when using a Pie Chart to visualize data:
 
@@ -121,3 +121,5 @@ It is recommended tha you use a Pie chart when you’ve got 2-3 data points that
 Fitting a pie to incompatible data One of the most common mistakes with using a pie chart is to fit it to data that does not represent a parts-to-whole comparison. This confusion occurs most often when the values to be plotted are percentages or proportions, but don’t comprise a complete whole. The example below shows how frequently the people surveyed used each of four applications, but since many people used multiple apps, the proportions sum to much more than 100%.
 
 ### Use Case Examples
+
+In this example, the PIE chart was used to represent the data from [Percentage of population with knowledge of English and French by census division, 2016](https://gcgeo.gc.ca/geonetwork/metadata/eng/7043f8c1-d5e5-492f-8bb1-7eeac9f2a74f).
