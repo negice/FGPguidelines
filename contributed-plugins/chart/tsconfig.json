@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "lib": ["dom", "es6", "es2016", "es2017.object"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "outDir": "../dist/chart",
+        "target": "ES2016",
+        "types": ["jquery", "node"],
+        "downlevelIteration": true
+    },
+    "include": ["./**/*.ts"],
+    "exclude": ["node_modules"]
+}
