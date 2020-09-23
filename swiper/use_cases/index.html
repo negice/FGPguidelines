@@ -49,19 +49,19 @@
     <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/configuration/">Configuration</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/use_cases/">Use Cases</a></li>
 </ul></li>
-    <li class="toctree-l2 current"><button class="section nav-item">Thematic Slider</button>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Swiper</button>
 <ul class="subnav">
     <li class="toctree-l3"><a class="nav-item" href="../overview/">Overview</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
     <li class="toctree-l3 current"><a class="nav-item current" href="./">Use Cases</a>
 <ul class="subnav">
 </ul></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/use_cases/">Use Cases</a></li>
 </ul></li>
 </ul></li>
                     <li class="toctree-l1">
@@ -70,7 +70,7 @@
             </nav>
             <div class="repo">
     <div class="previous"><a href="../configuration/">&laquo; Previous</a></div>
-    <div class="next"><a href="../../swiper/overview/">Next &raquo;</a></div>
+    <div class="next"><a href="../../about/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -82,31 +82,27 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Plugins &raquo; </li><li>Thematic Slider</li>
+    <li>Plugins &raquo; </li><li>Swiper</li>
 </ul>
 </nav>
                 <div id="content"><h2 id="use-case-examples">Use Case Examples</h2>
 <hr />
-<p>In this example, the Thematic Slider plugin was used to highlight <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e8896575-1fb8-4e53-8acd-8579c3c055c2">xSO4D wet deposition maps 1981-2015</a>. This map service has a total of 36 layers each showing the XS04D. The thematic slider provides the ability to load each layer and cycle through them highlighting change over time.</p>
-<p><img alt="thematicslider2" src="../../imgs/thematicslider2.png" /> <img alt="thematicslider3" src="../../imgs/thematicslider3.png" /></p>
-<p>This particular map service has a total of 36 layers present. Although using all 36 layers is possible it is not recommended. Loading all 36 maps at the same time results in extra time required for loading.
-For this use case, the thematic slider was used to show cumulative change for every 10 years between 1981 – 2015.</p>
+<p>In this example, the swiper plugin was used to highlight the changes in land cover for Agricultural Regions for Canada between 1995 and 2000 <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/16d2f828-96bb-468d-9b7d-1307c81e17b8">layer</a>. These layers are examples of ESRI Image layer being used with the swiper plugin.</p>
 <div>
 <iframe width=960px height="550" allowfullscreen=true
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=07>
+        src=https://jolevesq.github.io/contributed-plugins/swiper/samples/swiper-index.html?sample=2>
 </iframe
 </div>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>It is recommended to use the thematic slider with no more than 15 layers at a time. Testing has shown that a maximum of 15 layers meets the optimal loading time as recommended by the FGP Data team.</p>
-<p>If there is a case where there are multiple layers to be used with the thematic slider, you may consider adjusting the time between the layers. For example, if there is a dataset consisting of raster layers spanning from 1990 – 2020, you can consider adding layers after every 10 years. This simple change allows overall load time performance to improve as well as highlighting change occurring every decade</p>
+<p>To identify the active layer of the Swiper plugin, simply place your mouse cursor over the vertical bar of the plugin.</p>
 </div>
 <hr /></div>
                 <footer>
     <div class="footer-buttons">
         <div class="previous"><a href="../configuration/" title="Configuration"><span>Previous</span></a></div>
-        <div class="next"><a href="../../swiper/overview/" title="Overview"><span>Next</span></a></div>
+        <div class="next"><a href="../../about/" title="About"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

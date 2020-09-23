@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <title>Bar Chart &mdash; Guidelines for FGP Plugins</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../../.." class="site-name"> Guidelines for FGP Plugins</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="../../..">User Guidelines</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
+<ul class="subnav">
+    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../../../about/">About</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../../.." class="site-name"> Guidelines for FGP Plugins</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><h1 id="bar-chart">Bar Chart</h1>
+<p>Bar charts summarize and compare categorical data by using proportional bar lengths to represent values. The Chart Plugin supports two different types of bar charts. The traditional bar chart as well as grouped bar charts.</p>
+<p>Bar charts are composed of an x-axis and a y-axis. The x-axis represents discrete categories that correspond to one or many bars. Each bar’s height corresponds to a numeric value, which is measured by the y-axis.</p>
+<p>A grouped bar chart extends the bar chart, plotting numeric values for levels of two categorical variables instead of one. Bars are grouped by position for levels of one categorical variable, with color indicating the secondary category level within each group</p>
+<h2 id="best-pratices">Best Pratices</h2>
+<p><strong>Tips for interacting with the Bar Charts</strong></p>
+<p>Use a common zero-valued baseline First and foremost, make sure that all of your bars are being plotted against a zero-value baseline. Not only does that baseline make it easier for readers to compare bar lengths, it also maintains the truthfulness of your data visualization.</p>
+<p>A bar chart with a non-zero baseline or some other gap in the axis scale can easily misrepresent the comparison between groups since the ratio in bar lengths will not match the ratio in actual bar values.</p>
+<p>When attempting to use the barchart to represet multi year data information. It is important to note the data structure which will enable you to accomplish this. In the example below the population for each year is represented as an attribute field.</p>
+<p><strong>When to use a Bar Chart</strong></p>
+<p>A bar chart is used when you want to show a distribution of data points or perform a comparison of metric values across different subgroups of your data. From a bar chart, we can see which groups are highest or most common, and how other groups compare against the others. Since this is a fairly common task, bar charts are a fairly ubiquitous chart type.</p>
+<h3 id="use-case-examples">Use Case Examples</h3>
+<p>In this example,</p></div>
+                <footer>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../search/main.js"></script>
+</body>
+
+</html>

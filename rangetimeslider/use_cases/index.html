@@ -43,19 +43,19 @@
                     <li class="toctree-l1"><a class="nav-item" href="../../timeseries/">Time Series Animation</a></li>
                     <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/use_cases/">Use Cases</a></li>
-</ul></li>
-    <li class="toctree-l2 current"><button class="section nav-item">Thematic Slider</button>
+    <li class="toctree-l2 current"><button class="section nav-item">Range/TIme Slider</button>
 <ul class="subnav">
     <li class="toctree-l3"><a class="nav-item" href="../overview/">Overview</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
     <li class="toctree-l3 current"><a class="nav-item current" href="./">Use Cases</a>
 <ul class="subnav">
 </ul></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/use_cases/">Use Cases</a></li>
 </ul></li>
     <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
 <ul class="subnav hide">
@@ -70,7 +70,7 @@
             </nav>
             <div class="repo">
     <div class="previous"><a href="../configuration/">&laquo; Previous</a></div>
-    <div class="next"><a href="../../swiper/overview/">Next &raquo;</a></div>
+    <div class="next"><a href="../../thematicslider/overview/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -82,31 +82,34 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Plugins &raquo; </li><li>Thematic Slider</li>
+    <li>Plugins &raquo; </li><li>Range/TIme Slider</li>
 </ul>
 </nav>
                 <div id="content"><h2 id="use-case-examples">Use Case Examples</h2>
 <hr />
-<p>In this example, the Thematic Slider plugin was used to highlight <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e8896575-1fb8-4e53-8acd-8579c3c055c2">xSO4D wet deposition maps 1981-2015</a>. This map service has a total of 36 layers each showing the XS04D. The thematic slider provides the ability to load each layer and cycle through them highlighting change over time.</p>
-<p><img alt="thematicslider2" src="../../imgs/thematicslider2.png" /> <img alt="thematicslider3" src="../../imgs/thematicslider3.png" /></p>
-<p>This particular map service has a total of 36 layers present. Although using all 36 layers is possible it is not recommended. Loading all 36 maps at the same time results in extra time required for loading.
-For this use case, the thematic slider was used to show cumulative change for every 10 years between 1981 – 2015.</p>
-<div>
+<p><strong>Range Slider</strong></p>
+<p>In this example, the Range / Time Slider plugin was used with the Permafrost by ecoprovince <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/4baa66ad-aa29-4233-a6a8-7f5cbefb5ea8">layer</a>. This layer is an example of an ESRI Feature layer being used with the range slider. The PERMAFROST_PERCENT field was used with the range slider plugin to give the ability to the viewer to select specific percentages of permafrost they may be interested in.</p>
+<p>It is important to note the data structure of this layer. Looking closer at this dataset we can see that the PERMAFROST_PERCENT field consists of only integers. This enables the range slider to automatically identify the limits of the ranges present.</p>
+<p><img alt="rangeslider1" src="../../imgs/rangeslider1.png" /></p>
+<iframe width=960px height="450"
+        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=10>
+</iframe>
+
+<hr />
+<p><strong>Time Slider</strong></p>
+<p>In this example, the Range/Time Slider was used with the <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6">Ocean Data Inventory Temperature</a> and <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6">Ocean Data Inventory Salinity</a> datasets. The plugin was used with the “COLLECTION_START_DATE” it is interesting to note that both layers share the same field in this example. This made it easier to use the Range/Time Slider plugin with both layers simultaneously.</p>
 <iframe width=960px height="550" allowfullscreen=true
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=07>
-</iframe
-</div>
+        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=11>
+</iframe>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>It is recommended to use the thematic slider with no more than 15 layers at a time. Testing has shown that a maximum of 15 layers meets the optimal loading time as recommended by the FGP Data team.</p>
-<p>If there is a case where there are multiple layers to be used with the thematic slider, you may consider adjusting the time between the layers. For example, if there is a dataset consisting of raster layers spanning from 1990 – 2020, you can consider adding layers after every 10 years. This simple change allows overall load time performance to improve as well as highlighting change occurring every decade</p>
-</div>
-<hr /></div>
+<p>Use the anchors on the left and right to set the range of values to be displayed.</p>
+</div></div>
                 <footer>
     <div class="footer-buttons">
         <div class="previous"><a href="../configuration/" title="Configuration"><span>Previous</span></a></div>
-        <div class="next"><a href="../../swiper/overview/" title="Overview"><span>Next</span></a></div>
+        <div class="next"><a href="../../thematicslider/overview/" title="Overview"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

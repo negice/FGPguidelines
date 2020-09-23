@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>About &mdash; Guidelines for FGP Plugins</title>
+    <title>Time Series Animation &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -40,7 +40,10 @@
             <nav class="nav">
                 <ul class="root">
                     <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
-                    <li class="toctree-l1"><a class="nav-item" href="../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1 current"><a class="nav-item current" href="./">Time Series Animation</a>
+<ul class="subnav">
+<li class="toctree-l2"><a class="nav-item toc" href="#workflow">Workflow</a></li>
+</ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
     <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
@@ -62,14 +65,13 @@
     <li class="toctree-l3"><a class="nav-item" href="../swiper/use_cases/">Use Cases</a></li>
 </ul></li>
 </ul></li>
-                    <li class="toctree-l1 current">
-<a class="nav-item current" href="./">About</a>
-<ul class="subnav">
-</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../swiper/use_cases/">&laquo; Previous</a></div>
+    <div class="previous"><a href="..">&laquo; Previous</a></div>
+    <div class="next"><a href="../rangetimeslider/overview/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -84,13 +86,24 @@
     
 </ul>
 </nav>
-                <div id="content"><p><strong>Author and support</strong></p>
+                <div id="content"><h1 id="time-series-animation">Time Series Animation</h1>
+<p>Animations are an interesting way of visualizing time-series data. It distinctively gives the ability to observe how the data evolves. Depending on your data structure, there are two options available to implement time-series animations to your dataset.</p>
+<ol>
+<li><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></li>
+<li><a href="../thematicslider/overview/">Thematic Slider Plugin</a></li>
+</ol>
+<p><br></p>
+<h2 id="workflow">Workflow</h2>
 <hr />
-<p>Author and maintainer <a href="https://github.com/jolevesq">NRCan FGP - Johann Levesque</a></p>
-<p>To report issue, please create an issue from the <a href="https://github.com/fgpv-vpgf/contributed-plugins/issues">GitHub repository</a>. Add the plugin-range-slider label and any other applicable one.</p></div>
+<p><img alt="workflow" src="../imgs/timeseries_workflow.png" /></p>
+<p><strong><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></strong></p>
+<p>If your data has an attribute where the date is listed then the range/time slider is the best option to be used. The most important requirement is that your date column contains valid timestamp values, otherwise the data may not appear correctly. A column that includes a timestamp could be a date, created at, updated at, posted time, and so on. For example, the following image shows the value of a date column in the Data View.</p>
+<p><strong><a href="../thematicslider/overview/">Thematic Slider Plugin</a></strong></p>
+<p>If your dataset consists of multiple raster layers (static maps) as a map service that corresponds to a particular period then the raster time slider is the best option.</p></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../swiper/use_cases/" title="Use Cases"><span>Previous</span></a></div>
+        <div class="previous"><a href=".." title="User Guidelines"><span>Previous</span></a></div>
+        <div class="next"><a href="../rangetimeslider/overview/" title="Overview"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

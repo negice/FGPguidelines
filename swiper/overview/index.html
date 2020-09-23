@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../img/favicon.ico">
-    <title>Use Cases &mdash; Guidelines for FGP Plugins</title>
+    <title>Overview &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -49,19 +49,20 @@
     <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/configuration/">Configuration</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/use_cases/">Use Cases</a></li>
 </ul></li>
-    <li class="toctree-l2 current"><button class="section nav-item">Thematic Slider</button>
-<ul class="subnav">
-    <li class="toctree-l3"><a class="nav-item" href="../overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
-    <li class="toctree-l3 current"><a class="nav-item current" href="./">Use Cases</a>
-<ul class="subnav">
-</ul></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
 <ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../../swiper/use_cases/">Use Cases</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Swiper</button>
+<ul class="subnav">
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Overview</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../use_cases/">Use Cases</a></li>
 </ul></li>
 </ul></li>
                     <li class="toctree-l1">
@@ -69,8 +70,8 @@
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../configuration/">&laquo; Previous</a></div>
-    <div class="next"><a href="../../swiper/overview/">Next &raquo;</a></div>
+    <div class="previous"><a href="../../thematicslider/use_cases/">&laquo; Previous</a></div>
+    <div class="next"><a href="../configuration/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -82,31 +83,37 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Plugins &raquo; </li><li>Thematic Slider</li>
+    <li>Plugins &raquo; </li><li>Swiper</li>
 </ul>
 </nav>
-                <div id="content"><h2 id="use-case-examples">Use Case Examples</h2>
-<hr />
-<p>In this example, the Thematic Slider plugin was used to highlight <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/e8896575-1fb8-4e53-8acd-8579c3c055c2">xSO4D wet deposition maps 1981-2015</a>. This map service has a total of 36 layers each showing the XS04D. The thematic slider provides the ability to load each layer and cycle through them highlighting change over time.</p>
-<p><img alt="thematicslider2" src="../../imgs/thematicslider2.png" /> <img alt="thematicslider3" src="../../imgs/thematicslider3.png" /></p>
-<p>This particular map service has a total of 36 layers present. Although using all 36 layers is possible it is not recommended. Loading all 36 maps at the same time results in extra time required for loading.
-For this use case, the thematic slider was used to show cumulative change for every 10 years between 1981 – 2015.</p>
-<div>
+                <div id="content"><h1 id="swiper-plugin">Swiper Plugin</h1>
+<p>The Swiper enables you to easily compare the content of different layers. It provides a horizontal view mode which allows you to interact with the map. You can slide the swipe tool to reveal the content of another layer.</p>
+<p>The plugin works with the following mapping services:</p>
+<ul>
+<li>ESRI Feature</li>
+<li>ESRI Dynamic</li>
+<li>ESRI Image</li>
+<li>OGC WMS</li>
+<li>OGC WFS</li>
+<li>OGC WCS</li>
+</ul>
+<p>More information on Web map services can be found <a href="https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902">here.</a></p>
+<h2 id="best-pratices">Best Pratices</h2>
+<p><strong>Get the best out of the Thematic Slider</strong></p>
+<p>The Swiper is a visualization enhancer used to compare different layers. For example, you may want to use it to show before-and-after imagery of a flood, or display two related thematic layers in a map. You have the capability to move the slider back and forth to see the changes.</p>
+<p><strong>Tips for interacting with the Swiper Plugin</strong></p>
+<p>The recommended way to utilize this plugin effectively is as a comparative tool. You can use the swiper plugin to compare layers for an extra layer of visual analysis. As you swipe, the enabled layer will be temporarily erased relative to the position of the swiper.
+It is recommended that the layer with the swiper plugin enabled should be the top most layer in the legend tree.</p>
+<p><img alt="swiper1" src="../../imgs/swiper1.png" /></p>
+<p>In the example above, the Swiper plugin is enable on the top most layer. It is important to note that when using the swiper tool with two different layers, the layer with the swiper tool enabled can obscure the underlying layer.</p>
+<p>The tool could be used to explore satellite or aerial images of locations before and after disasters such as wildfires or landslides. You can also use this tool to compare historical and current maps to see how change occurs over time.</p>
 <iframe width=960px height="550" allowfullscreen=true
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=07>
-</iframe
-</div>
-
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>It is recommended to use the thematic slider with no more than 15 layers at a time. Testing has shown that a maximum of 15 layers meets the optimal loading time as recommended by the FGP Data team.</p>
-<p>If there is a case where there are multiple layers to be used with the thematic slider, you may consider adjusting the time between the layers. For example, if there is a dataset consisting of raster layers spanning from 1990 – 2020, you can consider adding layers after every 10 years. This simple change allows overall load time performance to improve as well as highlighting change occurring every decade</p>
-</div>
-<hr /></div>
+        src=https://jolevesq.github.io/contributed-plugins/swiper/samples/swiper-index.html>
+</iframe</div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../configuration/" title="Configuration"><span>Previous</span></a></div>
-        <div class="next"><a href="../../swiper/overview/" title="Overview"><span>Next</span></a></div>
+        <div class="previous"><a href="../../thematicslider/use_cases/" title="Use Cases"><span>Previous</span></a></div>
+        <div class="next"><a href="../configuration/" title="Configuration"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>

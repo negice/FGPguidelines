@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Line Chart &mdash; Guidelines for FGP Plugins</title>
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <title>Configure the Bar Chart &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
-    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../../../css/theme.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <link rel="stylesheet" href="../../../stylesheets/extra.css">
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>
@@ -27,11 +27,11 @@
             <div class="home">
                 <div class="title">
                     <button class="hamburger"></button>
-                    <a href=".." class="site-name"> Guidelines for FGP Plugins</a>
+                    <a href="../../.." class="site-name"> Guidelines for FGP Plugins</a>
                 </div>
                 <div class="search">
                     <div role="search">
-    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
         <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
     </form>
 </div>
@@ -39,15 +39,31 @@
             </div>
             <nav class="nav">
                 <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Thematic Slider</button>
+                    <li class="toctree-l1"><a class="nav-item" href="../../..">User Guidelines</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/overview/">Overview</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/configuration/">Configuration</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/use_cases/">Examples</a></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../rangetimeslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
 </ul></li>
                     <li class="toctree-l1">
-<a class="nav-item" href="../about/">About</a></li>
+<a class="nav-item" href="../../../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
@@ -57,7 +73,7 @@
         <main>
             <div class="home-top">
                 <button class="hamburger"></button>
-                <a href=".." class="site-name"> Guidelines for FGP Plugins</a>
+                <a href="../../.." class="site-name"> Guidelines for FGP Plugins</a>
             </div>
             <div id="main">
                 <nav class="breadcrumbs">
@@ -65,10 +81,7 @@
     
 </ul>
 </nav>
-                <div id="content"><h1 id="line-chart">Line Chart</h1>
-<p>A line chart consists of one or more lines connecting successive attribute values. Line graphs are useful for showing how things change or move over time and what the trends in the data may be. Since a line graph uses straight line segments to connect data points, it is easy to determine the data range, minimum and maximum, gaps, clusters, and outliers.</p>
-<p>When the primary categorical variable is continuous in nature, especially if it deals with time, then a useful alternative chart type to consider is the line chart. A line chart is especially useful when there are a lot of levels in the primary categorical variable: the need to cluster many bars around each position can make the chart difficult to read. The line chart cleans this up by aligning each of the sub-groups vertically, and the connected line between points makes it easier to track how each sub-group changes.</p>
-<h2 id="configure-the-line-chart">Configure the Line Chart</h2>
+                <div id="content"><h1 id="configure-the-bar-chart">Configure the Bar Chart</h1>
 <p>To configure this plugin to work with a mapping web service the following parameters are required.</p>
 <table>
   <tr>
@@ -90,7 +103,7 @@
     <td id=parameters>Colors</td>
     <td>An option to include hexadecimal color values to use to display the chart</td>
   </tr>
-    <tr>
+   <tr>
     <th rowspan="5">Labels   Axis</th>
     <td colspan="2" id=parameters>This option is only available when creating the bar and line chart.</td>
     </tr>
@@ -141,15 +154,7 @@
         </ol>
     </td>
   </tr>
-</table>
-
-<h2 id="best-practices">Best Practices</h2>
-<p><strong>Tips for interacting with the Line Charts</strong></p>
-<p>To use the Line chart to its best, data must be formatted in a specific way.</p>
-<p><strong>When to use a Line Chart</strong></p>
-<p>Line charts are useful when you want to show the changes in value of a given variable with respect to the changes in some other variable. The other variable is usually time. For example, line charts can be used to show the speed of a vehicle during specific time intervals.
-Multiple lines can also be plotted in a single line chart to compare the trend between series. A common use case for this is to observe the breakdown of the data across different subgroups. The ability to plot multiple lines also provides the line chart a special use case where it might not usually be selected.</p>
-<h3 id="use-case-examples">Use Case Examples</h3></div>
+</table></div>
                 <footer>
     <div class="footer-note">
         <p>
@@ -161,9 +166,9 @@ Multiple lines can also be plotted in a single line chart to compare the trend b
             </div>
         </main>
     </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js"></script>
-    <script src="../search/main.js"></script>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+    <script src="../../../search/main.js"></script>
 </body>
 
 </html>

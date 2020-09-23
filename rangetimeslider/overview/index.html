@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Overview &mdash; Guidelines for FGP Plugins</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../.." class="site-name"> Guidelines for FGP Plugins</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="../..">User Guidelines</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
+<ul class="subnav">
+    <li class="toctree-l2 current"><button class="section nav-item">Range/TIme Slider</button>
+<ul class="subnav">
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Overview</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#advantages-of-the-rangetime-slider">Advantages of the Range/Time Slider</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../../about/">About</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../../timeseries/">&laquo; Previous</a></div>
+    <div class="next"><a href="../configuration/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../.." class="site-name"> Guidelines for FGP Plugins</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Plugins &raquo; </li><li>Range/TIme Slider</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="range-slidertime-slider">Range Slider/Time Slider</h1>
+<p><strong>What is the Range/Time Slider?</strong></p>
+<p>The Range/Time Slider offers a dynamic way to visualize your data. The basic slider is a horizontal bar and has anchors that can be moved to establish the range of the values to be used. To visualize your data as a dynamic range, you can use any layer that contains numeric or date fields.
+Once you define the range properties for your layer, an interactive, on-screen slider is used to explore the data through a range/time you customized. Using this plugin, you can control the animation of the data with buttons to play and pause, go to the previous range/time, and go to the next range/time.</p>
+<p><strong>Range Slider</strong></p>
+<blockquote>
+<p>Range Slider properties can be set using any numerical or date field stored in the attribute field. For example, a range of values for a particular parameter.</p>
+</blockquote>
+<p><strong>Time Slider</strong></p>
+<blockquote>
+<p>The Time Slider plugin simplifies the visualization of temporal data in your maps. Before adding the Time Slider to your application, you first should understand how it can be configured to correctly display your temporal data.</p>
+</blockquote>
+<p><br></p>
+<h2 id="advantages-of-the-rangetime-slider">Advantages of the Range/Time Slider</h2>
+<p><strong>What are the advantages of using the Range/Time Slider plugin?</strong></p>
+<p>The Range/Time Slider plugin offers many advantages to both the data contributor and the user.</p>
+<ol>
+<li>
+<p>The main advantage to the data contributor when using the Range/Time Slider plugin is the ability to provide Time Series Animation or Range filtering of the data using only one layer.</p>
+</li>
+<li>
+<p>The advantages the Range/Time Slider provides to the user can be summarized in the following points:</p>
+<ul>
+<li>The ability to animation a GIF.</li>
+<li>Granular control over the time increment</li>
+<li>Lock or unlock the anchors when step or play.</li>
+</ul>
+</li>
+</ol>
+<p><br></p>
+<h2 id="best-pratices">Best Pratices</h2>
+<p><strong>Get the best out of the Range/Time Slider</strong></p>
+<p>The Range/Time Slider is best used in cases where you have a single layer with a numeric / date field. In this regard, you can filter the data using the slider and the results are displayed dynamically on the map.
+Take, for example, this map layer <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8cf43e2b-f276-4fb7-8d3a-e20fecc618b4">General distribution of humpback whales in the Estuary and Gulf of St. Lawrence</a> dataset.
+If we look at the map service for this dataset, we can see that there are a few fields that can work with the Range/Time Slider Plugin. In this example, the “Year” field was used.</p>
+<p>Utilizing the Range/Time Slider together with this rich data, we can dynamically filter the data to narrow results immediately. You can interactively adjust the minimum and maximum values of the displayed range, or move the entire range up and down. The slider and range settings are fully configurable using the Range tab, allowing you to look through the full range extent of your data using logical increments.
+By pressing the play button, the map will begin a time-series animation based on the range set. This may be 1-year or 5-year increments. This is a useful ability to determine trends or patterns occurring within the dataset.</p>
+<iframe width=960px height="550" allowfullscreen=true
+        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=10>
+</iframe</div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../../timeseries/" title="Time Series Animation"><span>Previous</span></a></div>
+        <div class="next"><a href="../configuration/" title="Configuration"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+</body>
+
+</html>
