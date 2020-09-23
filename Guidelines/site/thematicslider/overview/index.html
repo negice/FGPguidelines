@@ -40,22 +40,38 @@
             <nav class="nav">
                 <ul class="root">
                     <li class="toctree-l1"><a class="nav-item" href="../..">User Guidelines</a></li>
-                    <li class="toctree-l1"><button class="section nav-item">Thematic Slider</button>
+                    <li class="toctree-l1"><a class="nav-item" href="../../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">Overview</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#advantages-of-the-thematic-slider">Advantages of the Thematic Slider</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#getting-the-best-out-of-the-thematic-slider">Getting the best out of the Thematic Slider</a></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../rangetimeslider/use_cases/">Use Cases</a></li>
 </ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../configuration/">Configuration</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../use_cases/">Examples</a></li>
+    <li class="toctree-l2 current"><button class="section nav-item">Thematic Slider</button>
+<ul class="subnav">
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Overview</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#advantages-of-the-thematic-slider">Advantages of the Thematic Slider</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
 </ul></li>
                     <li class="toctree-l1">
 <a class="nav-item" href="../../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
-    <div class="previous"><a href="../..">&laquo; Previous</a></div>
+    <div class="previous"><a href="../../rangetimeslider/use_cases/">&laquo; Previous</a></div>
     <div class="next"><a href="../configuration/">Next &raquo;</a></div>
 </div>
         </aside>
@@ -68,7 +84,7 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    <li>Thematic Slider</li>
+    <li>Plugins &raquo; </li><li>Thematic Slider</li>
 </ul>
 </nav>
                 <div id="content"><h1 id="thematic-slider-plugin">Thematic Slider Plugin</h1>
@@ -104,7 +120,8 @@ such as vegetation, soil and surface water. It is implied in the construction of
 </li>
 </ol>
 <p><br></p>
-<h2 id="getting-the-best-out-of-the-thematic-slider">Getting the best out of the Thematic Slider</h2>
+<h2 id="best-pratices">Best Pratices</h2>
+<p><strong>Get the best out of the Thematic Slider</strong></p>
 <p>The Thematic Slider plugin is best used in cases where there are multiple raster layers (static maps) that correspond to a particular time. In this regard, it provides the ability to focus on the change occurring over each time as it cycles through each map.</p>
 <p>Take, for example, this map service, <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/99875416-4ef0-4dc1-889f-aa098beb7950">Fire Season Length under RCP 8.5</a>.</p>
 <p><img alt="thematicslider1" src="../../imgs/thematicslider1.png" /></p>
@@ -114,12 +131,12 @@ such as vegetation, soil and surface water. It is implied in the construction of
 <li>It is easy to disorganize the order of the layers. This is especially true when dealing with large datasets.</li>
 </ul>
 <p>Integrating the Thematic Slider plugin with this rich dataset allows the ability to cycle through each map layer providing any extra context as needed. The user can quickly navigate between each layer individually as well as the option to cycle through the layer at a predetermined time.</p>
-<iframe width=960px height="450"
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html>
+<iframe width=960px height="550" allowfullscreen=true
+        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=8>
 </iframe</div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href="../.." title="User Guidelines"><span>Previous</span></a></div>
+        <div class="previous"><a href="../../rangetimeslider/use_cases/" title="Use Cases"><span>Previous</span></a></div>
         <div class="next"><a href="../configuration/" title="Configuration"><span>Next</span></a></div>
     </div>
     <div class="footer-note">

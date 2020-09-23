@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <title>Configuration &mdash; Guidelines for FGP Plugins</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="../.." class="site-name"> Guidelines for FGP Plugins</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="../..">User Guidelines</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
+<ul class="subnav">
+    <li class="toctree-l2 current"><button class="section nav-item">Range/TIme Slider</button>
+<ul class="subnav">
+    <li class="toctree-l3"><a class="nav-item" href="../overview/">Overview</a></li>
+    <li class="toctree-l3 current"><a class="nav-item current" href="./">Configuration</a>
+<ul class="subnav">
+<li class="toctree-l4"><a class="nav-item toc" href="#definition-of-parameters">Definition of Parameters</a></li>
+<li class="toctree-l4"><a class="nav-item toc" href="#step-by-step-guide">Step By Step Guide</a></li>
+</ul></li>
+    <li class="toctree-l3"><a class="nav-item" href="../use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../../about/">About</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../overview/">&laquo; Previous</a></div>
+    <div class="next"><a href="../use_cases/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="../.." class="site-name"> Guidelines for FGP Plugins</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Plugins &raquo; </li><li>Range/TIme Slider</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="configure-the-rangetime-slider-plugin">Configure the Range/Time Slider Plugin</h1>
+<p>The plugin works with the following mapping services:</p>
+<ul>
+<li>ESRI Feature</li>
+<li>ESRI Dynamic</li>
+<li>ESRI WMS</li>
+<li>ESRI Image</li>
+<li>OGC WMS</li>
+<li>OGC WMS-T</li>
+<li>OGC WCS</li>
+</ul>
+<p>More information on Web map services can be found <a href="https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902">here.</a></p>
+<h2 id="definition-of-parameters">Definition of Parameters</h2>
+<p>To configure this plugin to work with a mapping web service the following parameters are required.</p>
+<table>
+  <tr>
+    <th></th>
+    <th>Parameters</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <th rowspan="1">General</th>
+    <td id=parameters>Open</td>
+    <td >Determines if the plugin will open/load automatically when a layer loads. By default it is set to open on map load</td>
+  </tr>
+  <tr>
+    <th rowspan="5">Slide Bar Controls</th>
+    <td id=parameters>Lock</td>
+    <td>Lock or unlock left anchor when step or play</td>
+  </tr>
+  <tr>
+    <td id=parameters>Loop</td>
+    <td>Loop the animation</td>
+  </tr>
+    <tr>
+    <td id=parameters>Delay</td>
+    <td>Add a dropdown menu to change the delay in play animation</td>
+  </tr>
+    <tr>
+    <td id=parameters>Export</td>
+    <td>Ability to export the animation to a GIF</td>
+  </tr>
+    <tr>
+    <td id=parameters>Refresh</td>
+    <td>Reset the slider with the default values</td>
+  </tr>
+  <tr>
+    <th rowspan="6">Params</th>
+    <td id=parameters> Type</td>
+    <td>Determines the type of slider (date or number) to be used. If date is selected, range and limit must be in milliseconds.</td>
+  </tr>
+  <tr>
+    <td id=parameters>Units</td>
+    <td>Determines the units label to add the right of the slider bar.</td>
+  </tr>
+    <tr>
+    <td id=parameters>Description</td>
+    <td>This allows for a description to be added to the slider information section. By default, the layer name and field will be included.</td>
+  </tr>
+    <tr>
+    <td id=parameters>Delay</td>
+    <td>Sets the delay between animations in milliseconds</td>
+  </tr>
+    <tr>
+    <td id=parameters>Range</td>
+    <td>Determines the minimum and maximum range values to be used in the plugin
+        <ol type="i">
+          <li id=tablelist>Minimum - Set the minimum value for the range slider. If this is not set the minimum range will be determined from the field selected.</li>
+          <li id=tablelist>Maximum – Set the maximum value for the range slider. If this is not set the maximum range will be used</li>
+        </ol>
+    </td>
+  </tr>
+    <tr>
+    <td id=parameters>Limit</td>
+    <td>Determines the minimum and maximum limit values to be used in the plugin
+         <ol type="i">
+          <li id=tablelist>Minimum - Set the minimum value for the range slider. If this is not set the minimum range will be determined from the field selected.</li>
+          <li id=tablelist>Maximum – Set the maximum value for the range slider. If this is not set the maximum range will be used</li>
+        </ol>
+    </td>
+  </tr>
+  <tr>
+    <th rowspan="2">Layers</th>
+    <td id=parameters>Id</td>
+    <td>Determines the layer id as defined in the layer section.</td>
+  </tr>
+  <tr>
+    <td id=parameters>Field</td>
+    <td>Determines the field name of the field to be used to filter with the range slider. It is important to note that the field name has to be used and not the alias of the field.</td>
+  </tr>
+</table>
+
+<h2 id="step-by-step-guide">Step By Step Guide</h2>
+<p><strong>Step 1.</strong> Ensure that the Range/Time Slider Plugin is enabled.</p>
+<p><img alt="Guide1" class="guide" src="../../imgs/RangeSlider/Guide1.png" /></p>
+<p><strong>Step 2.</strong> Under Slider bar controls, choose whether you want the slider to do the following:</p>
+<ul>
+<li>Lock/unlock minimal range</li>
+<li>Loop playback.</li>
+<li>Export animation as GIF</li>
+<li>Delay between animation</li>
+<li>Refresh</li>
+</ul>
+<p><strong>Step 3.</strong> Choose the Slider Type- Under the Slider Type, select one of the two options, <strong>Number</strong> or <strong>Date</strong>. This corresponds to the data attribute that will be used with the plugin.</p>
+<p><img alt="Guide2" class="guide" src="../../imgs/RangeSlider/Guide2.png" /></p>
+<p><strong>Step 4</strong>. Set the animation delay. The default is 3sec.</p>
+<p><strong>Step 5.</strong> Under layers, select the layer which the plugin will be enabled on.</p>
+<p><img alt="Guide3" class="guide" src="../../imgs/RangeSlider/Guide3.png" /></p>
+<p>In this example, the layer id is “Permafrost by ecoprovience” and the field name is “PERMAFROST_PERCENT”.</p>
+<p><img alt="Guide4" class="guide" src="../../imgs/RangeSlider/Guide4.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The exact field name must be used, not the alias.</p>
+</div></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../overview/" title="Overview"><span>Previous</span></a></div>
+        <div class="next"><a href="../use_cases/" title="Use Cases"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <title>Time Series Animation &mdash; Guidelines for FGP Plugins</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> Guidelines for FGP Plugins</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
+                    <li class="toctree-l1 current"><a class="nav-item current" href="./">Time Series Animation</a>
+<ul class="subnav">
+<li class="toctree-l2"><a class="nav-item toc" href="#workflow">Workflow</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Plugins</button>
+<ul class="subnav">
+    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/use_cases/">Use Cases</a></li>
+</ul></li>
+    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
+<ul class="subnav hide">
+    <li class="toctree-l3"><a class="nav-item" href="../swiper/overview/">Overview</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../swiper/configuration/">Configuration</a></li>
+    <li class="toctree-l3"><a class="nav-item" href="../swiper/use_cases/">Use Cases</a></li>
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../about/">About</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="..">&laquo; Previous</a></div>
+    <div class="next"><a href="../rangetimeslider/overview/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> Guidelines for FGP Plugins</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><h1 id="time-series-animation">Time Series Animation</h1>
+<p>Animations are an interesting way of visualizing time-series data. It distinctively gives the ability to observe how the data evolves. Depending on your data structure, there are two options available to implement time-series animations to your dataset.</p>
+<ol>
+<li><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></li>
+<li><a href="../thematicslider/overview/">Thematic Slider Plugin</a></li>
+</ol>
+<p><br></p>
+<h2 id="workflow">Workflow</h2>
+<hr />
+<p><img alt="workflow" src="../imgs/timeseries_workflow.png" /></p>
+<p><strong><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></strong></p>
+<p>If your data has an attribute where the date is listed then the range/time slider is the best option to be used. The most important requirement is that your date column contains valid timestamp values, otherwise the data may not appear correctly. A column that includes a timestamp could be a date, created at, updated at, posted time, and so on. For example, the following image shows the value of a date column in the Data View.</p>
+<p><strong><a href="../thematicslider/overview/">Thematic Slider Plugin</a></strong></p>
+<p>If your dataset consists of multiple raster layers (static maps) as a map service that corresponds to a particular period then the raster time slider is the best option.</p></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href=".." title="User Guidelines"><span>Previous</span></a></div>
+        <div class="next"><a href="../rangetimeslider/overview/" title="Overview"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+    <script src="../search/main.js"></script>
+</body>
+
+</html>

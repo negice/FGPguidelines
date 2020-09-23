@@ -7,10 +7,13 @@ In this example, the Thematic Slider plugin was used to highlight [xSO4D wet dep
 ![thematicslider2](../imgs/thematicslider2.png) ![thematicslider3](../imgs/thematicslider3.png)
 
 This particular map service has a total of 36 layers present. Although using all 36 layers is possible it is not recommended. Loading all 36 maps at the same time results in extra time required for loading.
+For this use case, the thematic slider was used to show cumulative change for every 10 years between 1981 – 2015.
 
-<iframe width=960px height="450"
-        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=1>
-</iframe>
+<div>
+<iframe width=960px height="550" allowfullscreen=true
+        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=07>
+</iframe
+</div>
 
 !!! tip
 

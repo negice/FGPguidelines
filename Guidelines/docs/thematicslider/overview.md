@@ -30,7 +30,9 @@ The Thematic Slider plugin offers many advantages to both the data contributor a
 
 <br>
 
-## Getting the best out of the Thematic Slider
+## Best Pratices
+
+**Get the best out of the Thematic Slider**
 
 The Thematic Slider plugin is best used in cases where there are multiple raster layers (static maps) that correspond to a particular time. In this regard, it provides the ability to focus on the change occurring over each time as it cycles through each map.
 
@@ -45,6 +47,6 @@ If we look at the available layers corresponding to Fire Season Length under RCP
 
 Integrating the Thematic Slider plugin with this rich dataset allows the ability to cycle through each map layer providing any extra context as needed. The user can quickly navigate between each layer individually as well as the option to cycle through the layer at a predetermined time.
 
-<iframe width=960px height="450"
-        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html>
+<iframe width=960px height="550" allowfullscreen=true
+        src=https://jolevesq.github.io/contributed-plugins/thematic-slider/samples/thematic-slider-index.html?sample=8>
 </iframe

@@ -1,15 +1,18 @@
-# Configure the Range Slider Plugin
+# Configure the Range/Time Slider Plugin
 
 The plugin works with the following mapping services:
 
 - ESRI Feature
 - ESRI Dynamic
 - ESRI WMS
+- ESRI Image
 - OGC WMS
 - OGC WMS-T
 - OGC WCS
 
 More information on Web map services can be found [here.](https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902)
+
+## Definition of Parameters
 
 To configure this plugin to work with a mapping web service the following parameters are required.
 
@@ -90,3 +93,35 @@ To configure this plugin to work with a mapping web service the following parame
     <td>Determines the field name of the field to be used to filter with the range slider. It is important to note that the field name has to be used and not the alias of the field.</td>
   </tr>
 </table>
+
+## Step By Step Guide
+
+**Step 1.** Ensure that the Range/Time Slider Plugin is enabled.
+
+![Guide1](../imgs/RangeSlider/Guide1.png){: class="guide"}
+
+**Step 2.** Under Slider bar controls, choose whether you want the slider to do the following:
+
+- Lock/unlock minimal range
+- Loop playback.
+- Export animation as GIF
+- Delay between animation
+- Refresh
+
+**Step 3.** Choose the Slider Type- Under the Slider Type, select one of the two options, **Number** or **Date**. This corresponds to the data attribute that will be used with the plugin.
+
+![Guide2](../imgs/RangeSlider/Guide2.png){: class="guide"}
+
+**Step 4**. Set the animation delay. The default is 3sec.
+
+**Step 5.** Under layers, select the layer which the plugin will be enabled on.
+
+![Guide3](../imgs/RangeSlider/Guide3.png){: class="guide"}
+
+In this example, the layer id is “Permafrost by ecoprovience” and the field name is “PERMAFROST_PERCENT”.
+
+![Guide4](../imgs/RangeSlider/Guide4.png){: class="guide"}
+
+!!! note
+
+    The exact field name must be used, not the alias.

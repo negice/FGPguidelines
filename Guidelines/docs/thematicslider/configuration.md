@@ -69,3 +69,32 @@ To configure this plugin to work with a mapping web service the following parame
 </table>
 
 ## Step-By-Step Guide
+
+**Step 1.** Ensure that the Thematic Slider Plugin is enabled.
+
+![Guide1](../imgs/ThematicSlider/Guide1.png){: class="guide"}
+
+**Step 2.** Select the options you want the Thematic Slider to do:
+
+- Start animation on load
+- Play the animation on loop
+- Stack layer visibility
+
+!!! note
+
+    By default, the following will be enabled:
+
+    - Open by default
+    - Enable description control
+    - Enable slider control
+
+**Step 3.** Under Layers, select the layer which the plugin will be enabled on.
+Set the Animation duration, Title for layer animation, and Description for layer animation
+
+![Guide1](../imgs/ThematicSlider/Guide2.png){: class="guide"}
+
+**Step 4.** Optional, Click on the Add Button to create new entries for additional layers.
+
+![Guide1](../imgs/ThematicSlider/Guide3.png){: class="guide"}
+
+![Guide1](../imgs/ThematicSlider/Guide4.png){: class="guide"}

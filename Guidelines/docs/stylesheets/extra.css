@@ -68,12 +68,19 @@ img[alt="thematicslider3"] {
   width: 235px;
 }
 
+img[class="guide"] {
+  width: 700px;
+  border: 2px solid black;
+  margin-left: 40px;
+}
+
 .admonition.tip {
   background: white;
   border-left: solid 4px #3498db;
   box-shadow: 7px 12px 13px 0px #888888;
   font-style: italic;
   width: 95%;
+  border-radius: 25px;
 }
 
 .admonition p {
@@ -85,6 +92,7 @@ img[alt="thematicslider3"] {
   background: #668cff;
   margin: 0px;
   padding: 4px 8px;
+  border-radius: 25px;
 }
 
 .tip p.admonition-title:before {
@@ -101,6 +109,7 @@ img[alt="thematicslider3"] {
   box-shadow: 7px 12px 13px 0px #888888;
   font-style: italic;
   width: 95%;
+  border-radius: 25px;
 }
 
 .note p.admonition-title {
@@ -108,6 +117,7 @@ img[alt="thematicslider3"] {
   background: #555599;
   margin: 0px;
   padding: 4px 8px;
+  border-radius: 25px;
 }
 
 .note p.admonition-title:before {

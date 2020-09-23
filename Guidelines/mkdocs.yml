@@ -1,14 +1,34 @@
 site_name: Guidelines for FGP Plugins
 nav:
   - User Guidelines: index.md
-  - Range/TIme Slider:
-      - Overview: rangetimeslider/overview.md
-      - Configuration: rangetimeslider/configuration.md
-      - Examples: rangetimeslider/use_cases.md
-  - Thematic Slider:
-      - Overview: thematicslider/overview.md
-      - Configuration: thematicslider/configuration.md
-      - Examples: thematicslider/use_cases.md
+  - Time Series Animation: timeseries.md
+  - Plugins:
+      - Range/TIme Slider:
+          - Overview: rangetimeslider/overview.md
+          - Configuration: rangetimeslider/configuration.md
+          - Use Cases: rangetimeslider/use_cases.md
+      - Thematic Slider:
+          - Overview: thematicslider/overview.md
+          - Configuration: thematicslider/configuration.md
+          - Use Cases: thematicslider/use_cases.md
+      - Swiper:
+          - Overview: swiper/overview.md
+          - Configuration: swiper/configuration.md
+          - Use Cases: swiper/use_cases.md
+      # - Chart:
+      #     - Overview: chart/overview.md
+      #     - Pie Chart:
+      #         - Overview: chart/pie/chart_pie.md
+      #         - Configuration: chart/pie/configuration.md
+      #         - Use Cases: chart/pie/use_cases.md
+      #     - Bar Chart:
+      #         - Overview: chart/bar/chart_bar.md
+      #         - Configuration: chart/bar/configuration.md
+      #         - Use Cases: chart/bar/use_cases.md
+      #     - Line Chart:
+      #         - Overview: chart/line/chart_line.md
+      #         - Configuration: chart/line/configuration.md
+      #         - Use Cases: chart/line/use_cases.md
   - About: about.md
 
 theme:
@@ -17,3 +37,4 @@ extra_css:
   - stylesheets/extra.css
 markdown_extensions:
   - admonition
+  - attr_list
