@@ -74,11 +74,6 @@ img[class="guide"] {
   margin-left: 40px;
 }
 
-.guides {
-  border-left: solid 4px grey;
-  font-style: italic;
-}
-
 .admonition.tip {
   background: white;
   border-left: solid 4px #3498db;
