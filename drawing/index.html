@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Drawing &mdash; Guidelines for FGP Plugins</title>
+    <title>Draw ToolBar &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -61,12 +61,20 @@
     <li class="toctree-l3"><a class="nav-item" href="../swiper/configuration/">Configuration</a></li>
     <li class="toctree-l3"><a class="nav-item" href="../swiper/use_cases/">Use Cases</a></li>
 </ul></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Draw ToolBar</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#demo">Demo</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../aoi/">Area of Interest</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../coords/">Coordinates Info</a></li>
 </ul></li>
                     <li class="toctree-l1">
 <a class="nav-item" href="../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
+    <div class="previous"><a href="../swiper/use_cases/">&laquo; Previous</a></div>
+    <div class="next"><a href="../aoi/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -78,11 +86,83 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    
+    <li>Plugins</li>
 </ul>
 </nav>
-                <div id="content"></div>
+                <div id="content"><h1 id="draw-toolbar">Draw Toolbar</h1>
+<p>The Draw Toolbar allows you to interact directly with the map. Functionally, it gives you the ability to create new geometries by drawing them on the map.
+The Drawing toolbar contains a collection of icon buttons that allows the user to draw shapes and images in the document.</p>
+<p><strong>Feature Highlight</strong></p>
+<p>Some of the features that the Draw Toolbar provides:</p>
+<ul>
+<li>Draw Points / Lines / Polygons</li>
+<li>Edit / Erase created objects</li>
+<li>Save / Upload Drawing</li>
+<li>Includes distance to your lines, perimeter and area to your polygons.</li>
+</ul>
+<p><br></p>
+<table>
+  <tr>
+    <th>Button</th>
+    <th>Name</th>
+    <th>Function</th>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_01.png" class="draw_table"></td>
+    <td>Color Picker</td>
+    <td>Allows you to select different colors</td>
+  </tr>
+  <tr>
+    <td><img src="../imgs/Draw/image_02.png" class="draw_table"></td>
+    <td>New Marker</td>
+    <td>Draws a marker point</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_03.png" class="draw_table"></td>
+    <td>New Line</td>
+    <td>Draws a line and includes the distance of the line</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_04.png" class="draw_table"></td>
+    <td>New Polygon</td>
+    <td>Draws a polygon and includes the area and perimeter of the shape</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_05.png" class="draw_table"></td>
+    <td>Edit Vertices</td>
+    <td>Allows you to edit the vertices of the selected line, polygon, or curve</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_06.png" class="draw_table"></td>
+    <td>Erase</td>
+    <td>Erase selected features</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_07.png" class="draw_table"></td>
+    <td>Save</td>
+    <td>Saves graphics to file</td>
+  </tr>
+    <tr>
+    <td><img src="../imgs/Draw/image_08.png" class="draw_table"></td>
+    <td>Upload</td>
+    <td>Uploads saved graphic file to the map</td>
+  </tr>
+</table>
+
+<hr />
+<p><br></p>
+<h2 id="demo">Demo</h2>
+<hr />
+<iframe width=960px height="450" allowfullscreen=true
+        src=https://jolevesq.github.io/contributed-plugins/draw/samples/draw-index.html>
+</iframe>
+
+<p><br></p></div>
                 <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../swiper/use_cases/" title="Use Cases"><span>Previous</span></a></div>
+        <div class="next"><a href="../aoi/" title="Area of Interest"><span>Next</span></a></div>
+    </div>
     <div class="footer-note">
         <p>
             Built with <a href="http://www.mkdocs.org">MkDocs</a> using
