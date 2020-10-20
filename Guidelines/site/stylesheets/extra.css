@@ -74,6 +74,11 @@ img[class="guide"] {
   margin-left: 40px;
 }
 
+img[class="draw_table"] {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+}
 .admonition.tip {
   background: white;
   border-left: solid 4px #3498db;

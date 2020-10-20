@@ -29,6 +29,9 @@ nav:
       #         - Overview: chart/line/chart_line.md
       #         - Configuration: chart/line/configuration.md
       #         - Use Cases: chart/line/use_cases.md
+      - Draw ToolBar: drawing.md
+      - Area of Interest: aoi.md
+      - Coordinates Info: coords.md
   - About: about.md
 
 theme:

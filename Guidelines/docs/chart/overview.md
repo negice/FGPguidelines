@@ -1,6 +1,6 @@
 # Charts Plugin
 
-The Chart plugin provides extra visualization options for the analysis of data rich datasets. The plugin provides three primary options for data visualization each with different customizations available.
+The Chart plugin provides extra visualization options for the analysis of data rich datasets. The plugin provides three primary options for dynamic data visualization each with different customizations available.
 You can also have a customized details panel to show useful data. It can take links, images and data from the feature. It is based on the Markdown notation and uses Showdown library to parse the markdown from the configuration file to the details panel.
 
 The charting options are:

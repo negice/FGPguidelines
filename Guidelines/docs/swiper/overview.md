@@ -13,9 +13,11 @@ The plugin works with the following mapping services:
 
 More information on Web map services can be found [here.](https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/8902)
 
+<br>
+
 ## Best Pratices
 
-**Get the best out of the Thematic Slider**
+**Get the best out of the Swiper Plugin**
 
 The Swiper is a visualization enhancer used to compare different layers. For example, you may want to use it to show before-and-after imagery of a flood, or display two related thematic layers in a map. You have the capability to move the slider back and forth to see the changes.
 
@@ -31,5 +33,5 @@ In the example above, the Swiper plugin is enable on the top most layer. It is i
 The tool could be used to explore satellite or aerial images of locations before and after disasters such as wildfires or landslides. You can also use this tool to compare historical and current maps to see how change occurs over time.
 
 <iframe width=960px height="550" allowfullscreen=true
-        src=https://jolevesq.github.io/contributed-plugins/swiper/samples/swiper-index.html>
+        src=https://jolevesq.github.io/contributed-plugins/swiper/samples/swiper-index.html?sample=2>
 </iframe
