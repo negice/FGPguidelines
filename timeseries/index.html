@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <title>Time Series Animation &mdash; Guidelines for FGP Plugins</title>
+    <title>Visualize Temporal Data &mdash; Guidelines for FGP Plugins</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -39,42 +39,37 @@
             </div>
             <nav class="nav">
                 <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
-                    <li class="toctree-l1 current"><a class="nav-item current" href="./">Time Series Animation</a>
+                    <li class="toctree-l1"><a class="nav-item" href="..">Introduction</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Guidelines</button>
 <ul class="subnav">
-<li class="toctree-l2"><a class="nav-item toc" href="#workflow">Workflow</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Visualize Temporal Data</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#time-series-animation">Time Series Animation</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#time-as-an-attribute">Time as an attribute</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#temporal-data-as-a-map-layer">Temporal data as a map layer</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../chart/overview/">Visualize Complex Data</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../swiper/introduction/">Enable Layer Comparison</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/use_cases/">Use Cases</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/use_cases/">Use Cases</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/use_cases/">Use Cases</a></li>
-</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../rangetimeslider/overview/">Range/Time Slider</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/overview/">Thematic Slider</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../swiper/overview/">Swiper</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../drawing/">Draw ToolBar</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../aoi/">Area of Interest</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../coords/">Coordinates Info</a></li>
 </ul></li>
-                    <li class="toctree-l1">
-<a class="nav-item" href="../about/">About</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">About</button>
+<ul class="subnav">
+    <li class="toctree-l2">
+<a class="nav-item" href="../about/">Support</a></li>
+</ul></li>
                 </ul>
             </nav>
             <div class="repo">
     <div class="previous"><a href="..">&laquo; Previous</a></div>
-    <div class="next"><a href="../rangetimeslider/overview/">Next &raquo;</a></div>
+    <div class="next"><a href="../chart/overview/">Next &raquo;</a></div>
 </div>
         </aside>
         <div id="spacer"><button class="arrow"></button></div>
@@ -86,27 +81,31 @@
             <div id="main">
                 <nav class="breadcrumbs">
 <ul>
-    
+    <li>Guidelines</li>
 </ul>
 </nav>
-                <div id="content"><h1 id="time-series-animation">Time Series Animation</h1>
+                <div id="content"><h1 id="visualize-temporal-data">Visualize Temporal Data</h1>
+<h2 id="time-series-animation">Time Series Animation</h2>
 <p>Animations are an interesting way of visualizing time-series data. It distinctively gives the ability to observe how the data evolves. Depending on your data structure, there are two options available to implement time-series animations to your dataset.</p>
 <ol>
 <li><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></li>
 <li><a href="../thematicslider/overview/">Thematic Slider Plugin</a></li>
 </ol>
-<p><br></p>
-<h2 id="workflow">Workflow</h2>
-<hr />
 <p><img alt="workflow" src="../imgs/timeseries_workflow.png" /></p>
+<h2 id="time-as-an-attribute">Time as an attribute</h2>
 <p><strong><a href="../rangetimeslider/overview/">Range / Time Slider Plugin</a></strong></p>
-<p>If your data has an attribute where the date is listed then the range/time slider is the best option to be used. The most important requirement is that your date column contains valid timestamp values, otherwise the data may not appear correctly. A column that includes a timestamp could be a date, created at, updated at, posted time, and so on. For example, the following image shows the value of a date column in the Data View.</p>
+<p>If your data has an attribute where the date is listed then the range/time slider is the best option to be used. The most important requirement is that your date column contains valid timestamp values, otherwise the data may not appear correctly. A column that includes a timestamp could be a date, created at, updated at, posted time, and so on. For example, the following image shows the value of a date column in the Data View.
+Here are a few <a href="../rangetimeslider/use_cases/">Usecases</a></p>
+<!-- [Example](https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=10){:target="\_blank"} -->
+
+<h2 id="temporal-data-as-a-map-layer">Temporal data as a map layer</h2>
 <p><strong><a href="../thematicslider/overview/">Thematic Slider Plugin</a></strong></p>
-<p>If your dataset consists of multiple raster layers (static maps) as a map service that corresponds to a particular period then the raster time slider is the best option.</p></div>
+<p>If your dataset consists of multiple raster layers (static maps) as a map service that corresponds to a particular period then the raster time slider is the best option.
+Here are a few <a href="../thematicslider/use_cases/">Usecases</a></p></div>
                 <footer>
     <div class="footer-buttons">
-        <div class="previous"><a href=".." title="User Guidelines"><span>Previous</span></a></div>
-        <div class="next"><a href="../rangetimeslider/overview/" title="Overview"><span>Next</span></a></div>
+        <div class="previous"><a href=".." title="Introduction"><span>Previous</span></a></div>
+        <div class="next"><a href="../chart/overview/" title="Visualize Complex Data"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
