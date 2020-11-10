@@ -89,11 +89,11 @@ img[class="draw_table"] {
 }
 .admonition.tip {
   background: white;
-  border-left: solid 4px #3498db;
+  /* border-left: solid 4px #3498db; */
   box-shadow: 7px 12px 13px 0px #888888;
-  font-style: italic;
+  /* font-style: italic; */
   width: 95%;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .admonition p {
@@ -105,7 +105,7 @@ img[class="draw_table"] {
   background: #668cff;
   margin: 0px;
   padding: 4px 8px;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .tip p.admonition-title:before {
@@ -117,12 +117,12 @@ img[class="draw_table"] {
 }
 
 .admonition.note {
-  background: #f0f0ff;
-  border-left: solid 4px #555599;
+  background: white;
+  /* border-left: solid 4px #555599; */
   box-shadow: 7px 12px 13px 0px #888888;
-  font-style: italic;
+  /* font-style: italic; */
   width: 95%;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .note p.admonition-title {
@@ -130,7 +130,7 @@ img[class="draw_table"] {
   background: #555599;
   margin: 0px;
   padding: 4px 8px;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .note p.admonition-title:before {

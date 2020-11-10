@@ -42,22 +42,44 @@
                     <li class="toctree-l1"><a class="nav-item" href="../..">Introduction</a></li>
                     <li class="toctree-l1"><button class="section nav-item">Guidelines</button>
 <ul class="subnav">
+    <li class="toctree-l2">
+<a class="nav-item" href="../../fgpauthor/">FGP Author Tool</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../../timeseries/">Visualize Temporal Data</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../../chart/overview/">Visualize Complex Data</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../chart/introduction/">Visualize Complex Data</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../../swiper/introduction/">Enable Layer Comparison</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
     <li class="toctree-l2 current"><a class="nav-item current" href="./">Range/Time Slider</a>
-<ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#advantages-of-the-rangetime-slider">Advantages of the Range/Time Slider</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#best-pratices">Best Pratices</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#use-case-examples">Use Case Examples</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#configure-the-rangetime-slider-plugin">Configure the Range/Time Slider Plugin</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#definition-of-parameters">Definition of Parameters</a></li>
-<li class="toctree-l3"><a class="nav-item toc" href="#step-by-step-guide">Step By Step Guide</a></li>
+<ul class="subnav"><ul>
+    
+        <li class="toctree-l3"><a class="nav-item toc"  href="#what-is-the-rangetime-slider">What is the Range/Time Slider</a></li>
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#advantages-of-the-rangetime-slider">Advantages of the Range/Time Slider</a></li>
+            
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#best-pratices">Best Pratices</a></li>
+            
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#use-case-examples">Use Case Examples</a></li>
+            
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#configure-the-rangetime-slider-plugin">Configure the Range/Time Slider Plugin</a></li>
+            
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#definition-of-parameters">Definition of Parameters</a></li>
+            
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#step-by-step-guide">Step By Step Guide</a></li>
+            
+        
+    
+    </ul>
+
+    
 </ul></li>
     <li class="toctree-l2"><a class="nav-item" href="../../thematicslider/overview/">Thematic Slider</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../../chart/overview/">Charts</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../../swiper/overview/">Swiper</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../../drawing/">Draw ToolBar</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../../aoi/">Area of Interest</a></li>
@@ -87,17 +109,12 @@
     <li>Plugins</li>
 </ul>
 </nav>
-                <div id="content"><h1 id="range-slidertime-slider">Range Slider/Time Slider</h1>
-<p><strong>What is the Range/Time Slider?</strong></p>
+                <div id="content"><h1 id="what-is-the-rangetime-slider">What is the Range/Time Slider</h1>
 <p>The Range/Time Slider offers a dynamic way to visualize your data. The basic slider is a horizontal bar and has anchors that can be moved to establish the range of the values to be used. To visualize your data as a dynamic range, you can use any layer that contains numeric or date fields.
 Once you define the range properties for your layer, an interactive, on-screen slider is used to explore the data through a range/time you customized. Using this plugin, you can control the animation of the data with buttons to play and pause, go to the previous range/time, and go to the next range/time.</p>
-<p><strong>Range Slider</strong></p>
+<p><img alt="timeseries bar" src="../../assets/imgs/rangeslider/rangesliderbar.png" /></p>
 <blockquote>
-<p>Range Slider properties can be set using any numerical or date field stored in the attribute field. For example, a range of values for a particular parameter.</p>
-</blockquote>
-<p><strong>Time Slider</strong></p>
-<blockquote>
-<p>The Time Slider plugin simplifies the visualization of temporal data in your maps. Before adding the Time Slider to your application, you first should understand how it can be configured to correctly display your temporal data.</p>
+<p>The Range/Time Slider plugin simplifies the visualization of temporal data in your maps. Before adding the Time Slider to your application, you first should understand how it can be configured to correctly display your temporal data. The plugin properties can be set using any numerical or date field stored in the attribute field. For example, a range of values for a particular parameter.</p>
 </blockquote>
 <p><br></p>
 <h2 id="advantages-of-the-rangetime-slider">Advantages of the Range/Time Slider</h2>
@@ -116,36 +133,40 @@ Once you define the range properties for your layer, an interactive, on-screen s
 </ul>
 </li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click on the top right corner to activate compact mode</p>
+<p><img alt="rangeslider compact mode" src="../../assets/gifs/rangeslider/rangeslidergif2.gif" /></p>
+</div>
 <hr />
 <p><br></p>
 <h2 id="best-pratices">Best Pratices</h2>
 <p><strong>Get the best out of the Range/Time Slider</strong></p>
-<p>The Range/Time Slider is best used in cases where you have a single layer with a numeric / date field. In this regard, you can filter the data using the slider and the results are displayed dynamically on the map.
+<p>The Range/Time Slider is best used in cases where you have a mapservice/layer with a numeric / date field. In this regard, you can filter the data using the slider and the results are displayed dynamically on the map.
 Take, for example, this map layer <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/8cf43e2b-f276-4fb7-8d3a-e20fecc618b4">General distribution of humpback whales in the Estuary and Gulf of St. Lawrence</a> dataset.
 If we look at the map service for this dataset, we can see that there are a few fields that can work with the Range/Time Slider Plugin. In this example, the “Year” field was used.</p>
-<p>Utilizing the Range/Time Slider together with this rich data, we can dynamically filter the data to narrow results immediately. You can interactively adjust the minimum and maximum values of the displayed range, or move the entire range up and down. The slider and range settings are fully configurable using the Range tab, allowing you to look through the full range extent of your data using logical increments.
-By pressing the play button, the map will begin a time-series animation based on the range set. This may be 1-year or 5-year increments. This is a useful ability to determine trends or patterns occurring within the dataset.</p>
-<iframe  allowfullscreen=true importance = high
-        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=10>
-</iframe>
+<blockquote>
+<p>Utilizing the Range/Time Slider together with this rich data, we can dynamically filter the data to narrow results immediately.</p>
+<p>You can interactively adjust the minimum and maximum values of the displayed range, or move the entire range up and down. The slider and range settings are fully configurable using the Range tab, allowing you to look through the full range extent of your data using logical increments.</p>
+<p>By pressing the play button, the map will begin a time-series animation based on the range set. This may be 1-year or 5-year increments. This is a useful ability to determine trends or patterns occurring within the dataset.</p>
+</blockquote>
+<iframe id="iframe1" allowfullscreen=true importance = high data-src="https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=14"></iframe>
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Click on the full screen button to enter an expansive view.</p>
+</div>
 <hr />
 <p><br></p>
 <h2 id="use-case-examples">Use Case Examples</h2>
 <p><strong>Range Slider</strong></p>
-<p>In this example, the Range / Time Slider plugin was used with the Permafrost by ecoprovince <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/4baa66ad-aa29-4233-a6a8-7f5cbefb5ea8">layer</a>. This layer is an example of an ESRI Feature layer being used with the range slider. The PERMAFROST_PERCENT field was used with the range slider plugin to give the ability to the viewer to select specific percentages of permafrost they may be interested in.</p>
-<p>It is important to note the data structure of this layer. Looking closer at this dataset we can see that the PERMAFROST_PERCENT field consists of only integers. This enables the range slider to automatically identify the limits of the ranges present.</p>
-<p><img alt="rangeslider1" src="../../imgs/rangeslider1.png" /></p>
-<iframe  allowfullscreen=true importance = high
-        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=10>
-</iframe>
+<p>In this example, the Range/Time Slider plugin was used with the Hydroelectric <a href="https://geoappext.nrcan.gc.ca/arcgis/rest/services/NACEI/energy_infrastructure_of_north_america_en/MapServer/20">layer</a>. This layer is an example of an ESRI Feature layer being used with the range slider. The Total_MW field was used with the range slider plugin to give the ability to the viewer to select specific amount of power generation they may be interested in.</p>
+<p>It is important to note the data structure of this layer. Looking closer at this dataset we can see that the Total_MW field consists of only integers. This enables the range slider to automatically identify the limits of the ranges present.</p>
+<iframe id="iframe2" allowfullscreen=true importance = high data-src="https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=1"></iframe>
 
-<hr />
-<p><strong>Time Slider</strong></p>
+<p><strong>Time Series</strong></p>
 <p>In this example, the Range/Time Slider was used with the <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6">Ocean Data Inventory Temperature</a> and <a href="https://gcgeo.gc.ca/geonetwork/metadata/eng/7da1f04f-49b0-4208-a49e-d0597b1f55c6">Ocean Data Inventory Salinity</a> datasets. The plugin was used with the “COLLECTION_START_DATE” it is interesting to note that both layers share the same field in this example. This made it easier to use the Range/Time Slider plugin with both layers simultaneously.</p>
-<iframe  allowfullscreen=true importance = high
-        src=https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=11>
-</iframe>
+<iframe id="iframe3" allowfullscreen=true importance = high data-src="https://jolevesq.github.io/contributed-plugins/range-slider/samples/range-slider-index.html?sample=15"></iframe>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -247,7 +268,7 @@ By pressing the play button, the map will begin a time-series animation based on
 
 <h2 id="step-by-step-guide">Step By Step Guide</h2>
 <p><strong>Step 1.</strong> Ensure that the Range/Time Slider Plugin is enabled.</p>
-<p><img alt="Guide1" class="guide" src="../../imgs/RangeSlider/Guide1.png" /></p>
+<p><img alt="Guide1" class="guide" src="../imgs/RangeSlider/Guide1.png" /></p>
 <p><strong>Step 2.</strong> Under Slider bar controls, choose whether you want the slider to do the following:</p>
 <ul>
 <li>Lock/unlock minimal range</li>
@@ -257,12 +278,12 @@ By pressing the play button, the map will begin a time-series animation based on
 <li>Refresh</li>
 </ul>
 <p><strong>Step 3.</strong> Choose the Slider Type- Under the Slider Type, select one of the two options, <strong>Number</strong> or <strong>Date</strong>. This corresponds to the data attribute that will be used with the plugin.</p>
-<p><img alt="Guide2" class="guide" src="../../imgs/RangeSlider/Guide2.png" /></p>
+<p><img alt="Guide2" class="guide" src="../imgs/RangeSlider/Guide2.png" /></p>
 <p><strong>Step 4</strong>. Set the animation delay. The default is 3sec.</p>
 <p><strong>Step 5.</strong> Under layers, select the layer which the plugin will be enabled on.</p>
-<p><img alt="Guide3" class="guide" src="../../imgs/RangeSlider/Guide3.png" /></p>
+<p><img alt="Guide3" class="guide" src="../imgs/RangeSlider/Guide3.png" /></p>
 <p>In this example, the layer id is “Permafrost by ecoprovience” and the field name is “PERMAFROST_PERCENT”.</p>
-<p><img alt="Guide4" class="guide" src="../../imgs/RangeSlider/Guide4.png" /></p>
+<p><img alt="Guide4" class="guide" src="../imgs/RangeSlider/Guide4.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The exact field name must be used, not the alias.</p>
@@ -284,6 +305,7 @@ By pressing the play button, the map will begin a time-series animation based on
     </div>
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js"></script>
+    <script src="../../javascripts/extra.js"></script>
     <script src="../../search/main.js"></script>
 </body>
 
