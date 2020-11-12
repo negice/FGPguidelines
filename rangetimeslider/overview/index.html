@@ -195,9 +195,17 @@ If we look at the map service for this dataset, we can see that there are a few 
     <th>Description</th>
   </tr>
   <tr>
-    <th rowspan="1">General</th>
+    <th rowspan="3">General</th>
     <td id=parameters>Open</td>
     <td >Determines if the plugin will open/load automatically when a layer loads. By default it is set to open on map load</td>
+  </tr>
+    <tr>
+    <td id=parameters>Autorun</td>
+    <td>Allows the animation to start automatically when the map loads.</td>
+  </tr>
+    <tr>
+    <td id=parameters>Loop</td>
+    <td>Allows the animation to restart automatically when it reaches the end of the array</td>
   </tr>
   <tr>
     <th rowspan="5">Slide Bar Controls</th>
@@ -221,20 +229,29 @@ If we look at the map service for this dataset, we can see that there are a few 
     <td>Reset the slider with the default values</td>
   </tr>
   <tr>
-    <th rowspan="6">Params</th>
+    <th rowspan="7">Params</th>
     <td id=parameters> Type</td>
-    <td>Determines the type of slider (date or number) to be used. If date is selected, range and limit must be in milliseconds.</td>
+    <td>Determines the type of slider (date, wmst or number) to be used. If date or wmst is selected, range and limit must be in milliseconds.</td>
   </tr>
   <tr>
-    <td id=parameters>Units</td>
-    <td>Determines the units label to add the right of the slider bar.</td>
+    <td id=parameters>Range Type</td>
+    <td>Determines the type of range to be used. Single for one handle or Dual for two handles</td>
   </tr>
     <tr>
-    <td id=parameters>Description</td>
-    <td>This allows for a description to be added to the slider information section. By default, the layer name and field will be included.</td>
+    <td id=parameters>Step Type</td>
+    <td>The type of step (dynamic for open values or static from a list of values)</td>
+  </tr>
+      <tr>
+    <td id=parameters>Precision</td>
+    <td>Allows you to set the precision of the data.
+        <ol type="i">
+          <li id=tablelist>Number - Set the precision for either 0,1,2 decimal places</li>
+          <li id=tablelist>Date or Wmst - Set the precision for either Date or Hour </li>
+        </ol>
+    </td>
   </tr>
     <tr>
-    <td id=parameters>Delay</td>
+    <td id=parameters>Animation Delay</td>
     <td>Sets the delay between animations in milliseconds</td>
   </tr>
     <tr>
@@ -252,6 +269,7 @@ If we look at the map service for this dataset, we can see that there are a few 
          <ol type="i">
           <li id=tablelist>Minimum - Set the minimum value for the range slider. If this is not set the minimum range will be determined from the field selected.</li>
           <li id=tablelist>Maximum – Set the maximum value for the range slider. If this is not set the maximum range will be used</li>
+           <li id=tablelist>Static Items – Allows you to set an array of values to use for inner limits. This is only enabled when Step Type is set to "Static"</li>
         </ol>
     </td>
   </tr>
@@ -266,6 +284,7 @@ If we look at the map service for this dataset, we can see that there are a few 
   </tr>
 </table>
 
+<hr />
 <h2 id="step-by-step-guide">Step By Step Guide</h2>
 <p><strong>Step 1.</strong> Ensure that the Range/Time Slider Plugin is enabled.</p>
 <p><img alt="Guide1" class="guide" src="../imgs/RangeSlider/Guide1.png" /></p>
