@@ -39,6 +39,15 @@ th {
   line-height: 1.9;
   font-family: sans-serif;
 }
+
+figure {
+  height: 75%;
+  /* margin: 1.25rem auto;
+  padding: 1.051%; */
+  width: 75%;
+  border: 2px solid;
+}
+
 iframe {
   width: 960px;
   height: 550px;
