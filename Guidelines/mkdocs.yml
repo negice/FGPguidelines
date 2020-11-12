@@ -1,43 +1,29 @@
 site_name: Guidelines for FGP Plugins
 nav:
-  - User Guidelines: index.md
-  - Time Series Animation: timeseries.md
+  - Introduction: index.md
+  - Guidelines:
+      - FGP Author Tool: ./guides/fgpauthor.md
+      - Visualize Temporal Data: ./guides/timeseries.md
+      - Visualize Complex Data: ./guides/complexdata.md
+      - Enable Layer Comparison: ./guides/comparison.md
   - Plugins:
-      - Range/TIme Slider:
-          - Overview: rangetimeslider/overview.md
-          - Configuration: rangetimeslider/configuration.md
-          - Use Cases: rangetimeslider/use_cases.md
-      - Thematic Slider:
-          - Overview: thematicslider/overview.md
-          - Configuration: thematicslider/configuration.md
-          - Use Cases: thematicslider/use_cases.md
-      - Swiper:
-          - Overview: swiper/overview.md
-          - Configuration: swiper/configuration.md
-          - Use Cases: swiper/use_cases.md
-      # - Chart:
-      #     - Overview: chart/overview.md
-      #     - Pie Chart:
-      #         - Overview: chart/pie/chart_pie.md
-      #         - Configuration: chart/pie/configuration.md
-      #         - Use Cases: chart/pie/use_cases.md
-      #     - Bar Chart:
-      #         - Overview: chart/bar/chart_bar.md
-      #         - Configuration: chart/bar/configuration.md
-      #         - Use Cases: chart/bar/use_cases.md
-      #     - Line Chart:
-      #         - Overview: chart/line/chart_line.md
-      #         - Configuration: chart/line/configuration.md
-      #         - Use Cases: chart/line/use_cases.md
-      - Draw ToolBar: drawing.md
-      - Area of Interest: aoi.md
-      - Coordinates Info: coords.md
-  - About: about.md
+      - Range/Time Slider: ./plugin/rangetimeslider.md
+      - Thematic Slider: ./plugin/thematicslider.md
+      - Charts: ./plugin/charts.md
+      - Swiper: ./plugin/swiper.md
+      - Draw ToolBar: ./plugin/draw.md
+      - Area of Interest: ./plugin/aoi.md
+      - Coordinates Info: ./plugin/coord.md
+  - About:
+      - Support: about.md
 
 theme:
   name: ivory
+  custom_dir: overrides
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 markdown_extensions:
   - admonition
   - attr_list

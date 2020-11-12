@@ -39,37 +39,42 @@
             </div>
             <nav class="nav">
                 <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="..">User Guidelines</a></li>
-                    <li class="toctree-l1"><a class="nav-item" href="../timeseries/">Time Series Animation</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="..">Introduction</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Guidelines</button>
+<ul class="subnav">
+    <li class="toctree-l2">
+<a class="nav-item" href="../fgpauthor/">FGP Author Tool</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../timeseries/">Visualize Temporal Data</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../chart/introduction/">Visualize Complex Data</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../swiper/introduction/">Enable Layer Comparison</a></li>
+</ul></li>
                     <li class="toctree-l1"><button class="section nav-item">Plugins</button>
 <ul class="subnav">
-    <li class="toctree-l2"><button class="section nav-item hide">Range/TIme Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../rangetimeslider/use_cases/">Use Cases</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Thematic Slider</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../thematicslider/use_cases/">Use Cases</a></li>
-</ul></li>
-    <li class="toctree-l2"><button class="section nav-item hide">Swiper</button>
-<ul class="subnav hide">
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/overview/">Overview</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/configuration/">Configuration</a></li>
-    <li class="toctree-l3"><a class="nav-item" href="../swiper/use_cases/">Use Cases</a></li>
-</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../rangetimeslider/overview/">Range/Time Slider</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../thematicslider/overview/">Thematic Slider</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../chart/overview/">Charts</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../swiper/overview/">Swiper</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../drawing/">Draw ToolBar</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../aoi/">Area of Interest</a></li>
     <li class="toctree-l2 current"><a class="nav-item current" href="./">Coordinates Info</a>
+<ul class="subnav"><ul>
+    
+        <li class="toctree-l3"><a class="nav-item toc"  href="#coordinates-info">Coordinates Info</a></li>
+        
+            <li class="toctree-l4"><a class="nav-item toc"  href="#try-it-yourself">Try it yourself</a></li>
+            
+        
+    
+    </ul>
+
+    
+</ul></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">About</button>
 <ul class="subnav">
-<li class="toctree-l3"><a class="nav-item toc" href="#demo">Demo</a></li>
+    <li class="toctree-l2">
+<a class="nav-item" href="../about/">Support</a></li>
 </ul></li>
-</ul></li>
-                    <li class="toctree-l1">
-<a class="nav-item" href="../about/">About</a></li>
                 </ul>
             </nav>
             <div class="repo">
@@ -98,19 +103,21 @@
 <li>National Topographic System Index Maps (NTS)</li>
 <li>Provides elevation at any point</li>
 </ul>
-<hr />
-<h2 id="demo">Demo</h2>
-<hr />
+<p><img alt="coords demo" src="../assets/videos/coords/coord1.mp4" /></p>
+<video style="width:80%" controls>
+  <source src="../assets/videos/coords/coord1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<h2 id="try-it-yourself">Try it yourself</h2>
 <p>The Coordinates Info plugin can be accessed using the Menu tab to the left of the Layers information box. After clicking on the Menu bar, scroll to the bottom where you will notice the plugins section. Simply click on the Coordinates Info plugin to enable it.</p>
-<iframe width=960px height="450" allowfullscreen=true
-        src=https://jolevesq.github.io/contributed-plugins/draw/samples/draw-index.html>
-</iframe>
+<iframe id="iframe3" allowfullscreen=true importance = high data-src="https://negice.github.io/usecase/coord/samples/coord-index.html"></iframe>
 
 <p><br></p></div>
                 <footer>
     <div class="footer-buttons">
         <div class="previous"><a href="../aoi/" title="Area of Interest"><span>Previous</span></a></div>
-        <div class="next"><a href="../about/" title="About"><span>Next</span></a></div>
+        <div class="next"><a href="../about/" title="Support"><span>Next</span></a></div>
     </div>
     <div class="footer-note">
         <p>
@@ -124,6 +131,7 @@
     </div>
     <script>var base_url = '..';</script>
     <script src="../js/theme.js"></script>
+    <script src="../javascripts/extra.js"></script>
     <script src="../search/main.js"></script>
 </body>
 
