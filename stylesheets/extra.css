@@ -53,6 +53,11 @@ iframe {
   height: 550px;
 }
 
+img[class="guide"] {
+  width: 500px;
+  margin-left: 40px;
+}
+
 img[alt="workflow"] {
   width: 800px;
 }
